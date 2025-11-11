@@ -87,7 +87,7 @@ netlify dev
 ```
 
 ## Your Contact Integrations:
-- 📧 Email: info@kachehub.com
+- 📧 Email: kachehubinfo@gmail.com
 - 📱 WhatsApp: +255 689 178 891
 - Both are pre-configured in your floating contact buttons!
 
