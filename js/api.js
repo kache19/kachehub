@@ -8,7 +8,9 @@
 
 class KachehubAPI {
     constructor() {
-        this.baseURL = '../backend/api/';
+        // For static hosting, API calls are disabled
+        // Contact form uses WhatsApp integration instead
+        this.baseURL = '/api/'; // Will use Netlify Functions if needed
         this.init();
     }
 
