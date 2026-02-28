@@ -8,9 +8,13 @@
 
 class KachehubAPI {
     constructor() {
-        // For static hosting, API calls are disabled
-        // Contact form uses WhatsApp integration instead
+        // Static-safe default: API integration is opt-in.
+        // Enable only when backend endpoints are available.
         this.baseURL = '/api/'; // Will use Netlify Functions if needed
+        this.enabled = window.KACHEHUB_ENABLE_API === true;
+        if (!this.enabled) {
+            return;
+        }
         this.init();
     }
 
@@ -86,7 +90,7 @@ class KachehubAPI {
         // Auto remove after 5 seconds
         setTimeout(() => {
             if (notification.parentElement) {
-                notification.style.transform = 'translateX(full)';
+                notification.style.transform = 'translateX(100%)';
                 setTimeout(() => {
                     if (notification.parentElement) {
                         notification.remove();

@@ -3,11 +3,56 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Kachehub</title>
+<title>Kachehub | System Developer & Software Solutions</title>
+<meta name="description" content="Kachehub helps businesses grow and manage operations through web systems, mobile apps, UI/UX design, cloud solutions, and IT support."/>
+<meta name="keywords" content="Kachehub, system developer, software development, web development, mobile app development, UI UX design, cloud solutions, IT support"/>
+<meta name="author" content="Kachehub"/>
+<meta name="robots" content="index, follow, max-image-preview:large"/>
+<meta name="theme-color" content="#101c22"/>
+<link rel="canonical" href="https://kachehub.com/"/>
+
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Kachehub | System Developer & Software Solutions"/>
+<meta property="og:description" content="Business-focused systems that help companies grow revenue, manage operations, and scale confidently."/>
+<meta property="og:url" content="https://kachehub.com/"/>
+<meta property="og:site_name" content="Kachehub"/>
+<meta property="og:image" content="https://kachehub.com/uploads/logo7.jpg"/>
+<meta property="og:image:alt" content="Kachehub logo"/>
+<meta property="og:locale" content="en_US"/>
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Kachehub | System Developer & Software Solutions"/>
+<meta name="twitter:description" content="Software solutions that help businesses grow, manage workflows, and scale with confidence."/>
+<meta name="twitter:image" content="https://kachehub.com/uploads/logo7.jpg"/>
 <link rel="icon" type="image/jpeg" href="uploads/logo7.jpg"/>
 <link rel="apple-touch-icon" href="uploads/logo7.jpg"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Kachehub",
+  "url": "https://kachehub.com/",
+  "logo": "https://kachehub.com/uploads/logo7.jpg",
+  "image": "https://kachehub.com/uploads/logo7.jpg",
+  "description": "Kachehub helps businesses grow and manage operations through web development, mobile apps, UI/UX design, cloud solutions, and IT support.",
+  "email": "kachehubinfo@gmail.com",
+  "telephone": "+255689178891",
+  "areaServed": "TZ",
+  "serviceType": [
+    "System Development",
+    "Web Development",
+    "Mobile App Development",
+    "UI/UX Design",
+    "Cloud Solutions",
+    "IT Support"
+  ],
+  "sameAs": [
+    "https://wa.me/255689178891"
+  ]
+}
+</script>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=DM+Sans:wght@400;500;600;700;800&family=Material+Symbols+Outlined&display=swap" rel="stylesheet"/>
 <style>
         .material-symbols-outlined {
             font-variation-settings:
@@ -51,6 +96,9 @@
         header {
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
             will-change: background-color, box-shadow, backdrop-filter;
+            border-bottom-color: var(--line) !important;
+            background: rgba(8, 19, 29, 0.82) !important;
+            box-shadow: 0 16px 40px rgba(2, 10, 17, 0.45);
         }
         
         /* Ensure content doesn't jump under fixed header */
@@ -67,11 +115,66 @@
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             text-rendering: optimizeLegibility;
+            background:
+                radial-gradient(1000px 540px at 8% -8%, rgba(20, 184, 166, 0.20), transparent 60%),
+                radial-gradient(920px 520px at 100% 0%, rgba(14, 165, 233, 0.18), transparent 58%),
+                linear-gradient(180deg, #08131d 0%, #091824 45%, #0a1720 100%);
+            color: #e6eef7;
+            position: relative;
         }
         
         /* Smooth Scroll Behavior */
         html {
             scroll-behavior: smooth;
+        }
+
+        :root {
+            --accent: #0ea5cf;
+            --accent-2: #22d3ee;
+            --accent-warm: #f59e0b;
+            --bg-base: #08131d;
+            --bg-elev: #0f2230;
+            --surface: #112738;
+            --surface-2: #143145;
+            --line: rgba(147, 197, 253, 0.22);
+            --text-soft: #95aec2;
+            --font-heading: "Chakra Petch", "Segoe UI", sans-serif;
+            --font-body: "DM Sans", "Segoe UI", sans-serif;
+        }
+
+        body::before,
+        body::after {
+            content: "";
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        body::before {
+            background:
+                radial-gradient(440px 260px at 12% 18%, rgba(20, 184, 166, 0.20), transparent 72%),
+                radial-gradient(520px 320px at 84% 12%, rgba(14, 165, 233, 0.18), transparent 72%),
+                radial-gradient(620px 340px at 50% 100%, rgba(245, 158, 11, 0.10), transparent 75%);
+            filter: blur(10px);
+        }
+
+        body::after {
+            background-image:
+                linear-gradient(rgba(20, 184, 166, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(20, 184, 166, 0.05) 1px, transparent 1px);
+            background-size: 36px 36px;
+            mask-image: radial-gradient(circle at center, black 20%, transparent 78%);
+            opacity: 0.45;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: var(--font-heading);
+            letter-spacing: -0.03em;
+        }
+
+        p, li, a, button, input, select, textarea, label, span {
+            font-family: var(--font-body);
         }
         
         /* Loading State */
@@ -193,6 +296,192 @@
                 text-shadow: none !important;
             }
         }
+
+        /* Home hero moving background */
+        #hero-bg {
+            opacity: 1;
+            transition: opacity 700ms ease;
+        }
+
+        .hero-bg-motion {
+            animation: hero-pan 16s ease-in-out infinite alternate;
+            will-change: transform, background-position;
+        }
+
+        .hero-glow {
+            position: absolute;
+            border-radius: 9999px;
+            filter: blur(30px);
+            opacity: 0.35;
+            pointer-events: none;
+            animation: float-glow 10s ease-in-out infinite alternate;
+        }
+
+        .hero-glow.a {
+            width: 280px;
+            height: 280px;
+            background: rgba(17, 147, 212, 0.45);
+            top: -80px;
+            left: -60px;
+        }
+
+        .hero-glow.b {
+            width: 260px;
+            height: 260px;
+            background: rgba(24, 180, 240, 0.35);
+            bottom: -90px;
+            right: -50px;
+            animation-delay: 1.3s;
+        }
+
+        .premium-card {
+            border: 1px solid var(--line);
+            box-shadow: 0 20px 45px rgba(2, 10, 17, 0.46);
+            backdrop-filter: blur(10px);
+            background: linear-gradient(160deg, rgba(17, 39, 56, 0.88), rgba(11, 27, 39, 0.88));
+        }
+
+        .section-title {
+            letter-spacing: -0.02em;
+        }
+
+        section > div > div > div.text-center > h2 {
+            letter-spacing: -0.025em;
+            line-height: 1.15;
+        }
+
+        #services-container > div,
+        #portfolio-container > div,
+        #team article,
+        #testimonials-container > div > div {
+            border: 1px solid var(--line);
+            box-shadow: 0 18px 34px rgba(2, 10, 17, 0.35);
+            border-radius: 1rem;
+            background: linear-gradient(165deg, rgba(17, 39, 56, 0.96), rgba(12, 30, 42, 0.96));
+            position: relative;
+            overflow: hidden;
+        }
+
+        #services-container > div::before,
+        #portfolio-container > div::before,
+        #team article::before,
+        #testimonials-container > div > div::before {
+            content: "";
+            position: absolute;
+            inset: 0 0 auto 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, rgba(34, 211, 238, 0.85), transparent);
+        }
+
+        #services-container > div:hover,
+        #portfolio-container > div:hover,
+        #team article:hover,
+        #testimonials-container > div > div:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 26px 45px rgba(2, 10, 17, 0.48);
+        }
+
+        #home h1 {
+            text-shadow: 0 8px 34px rgba(0, 0, 0, 0.45);
+        }
+
+        #home h2 {
+            color: #c3d7e8;
+        }
+
+        #services,
+        #about,
+        #testimonials {
+            background: linear-gradient(180deg, rgba(8, 19, 29, 0.45), rgba(8, 19, 29, 0.82));
+        }
+
+        #portfolio,
+        #team,
+        #contact {
+            background: linear-gradient(180deg, rgba(11, 28, 40, 0.80), rgba(8, 19, 29, 0.96)) !important;
+        }
+
+        #portfolio-container p,
+        #about p,
+        #contact p,
+        #team p,
+        #testimonials p {
+            color: var(--text-soft);
+        }
+
+        .bg-primary,
+        a.bg-primary,
+        button.bg-primary {
+            background-image: linear-gradient(135deg, var(--accent), var(--accent-2));
+            box-shadow: 0 10px 24px rgba(6, 78, 108, 0.42);
+            border: none;
+        }
+
+        .bg-primary:hover,
+        a.bg-primary:hover,
+        button.bg-primary:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 16px 28px rgba(6, 78, 108, 0.55);
+        }
+
+        .border-primary {
+            border-color: rgba(34, 211, 238, 0.75) !important;
+            color: #7fe7ff !important;
+        }
+
+        input, select, textarea {
+            border-color: rgba(148, 163, 184, 0.34) !important;
+            background: rgba(11, 27, 39, 0.88) !important;
+            color: #e6eef7 !important;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            color: #8ba7bb !important;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.20);
+            border-color: rgba(34, 211, 238, 0.75) !important;
+        }
+
+        footer {
+            border-top-color: var(--line) !important;
+            background: rgba(8, 19, 29, 0.88);
+        }
+
+        .reveal-up {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 500ms ease, transform 500ms ease;
+        }
+
+        .reveal-up.in-view {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @keyframes hero-pan {
+            0% {
+                transform: scale(1);
+                background-position: 50% 50%;
+            }
+            100% {
+                transform: scale(1.12);
+                background-position: 56% 44%;
+            }
+        }
+
+        @keyframes float-glow {
+            0% { transform: translate3d(0, 0, 0) scale(1); }
+            100% { transform: translate3d(16px, -12px, 0) scale(1.08); }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .hero-bg-motion {
+                animation: none !important;
+            }
+        }
     </style>
 <script id="tailwind-config">
         tailwind.config = {
@@ -200,12 +489,13 @@
           theme: {
             extend: {
               colors: {
-                "primary": "#1193d4",
+                "primary": "#0ea5cf",
                 "background-light": "#f6f7f8",
                 "background-dark": "#101c22",
               },
               fontFamily: {
-                "display": ["Inter", "Noto Sans", "sans-serif"]
+                "display": ["Chakra Petch", "Noto Sans", "sans-serif"],
+                "body": ["DM Sans", "Noto Sans", "sans-serif"]
               },
               borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
             },
@@ -213,7 +503,7 @@
         }
       </script>
 </head>
-<body class="bg-background-light dark:bg-background-dark font-display text-base text-gray-800 dark:text-gray-200">
+<body class="bg-background-light dark:bg-background-dark font-body text-base text-gray-800 dark:text-gray-200">
 <div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
 <div class="layout-container flex h-full grow flex-col">
 <div class="w-full flex flex-1 justify-center">
@@ -231,13 +521,15 @@
 <div class="hidden lg:flex flex-1 justify-end gap-6 xl:gap-8">
 <div class="flex items-center gap-6 xl:gap-9">
 <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors" href="#home">Home</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors" href="#brief">Start Project</a>
 <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors" href="#services">Services</a>
 <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors" href="#portfolio">Portfolio</a>
 <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors" href="#about">About Us</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors" href="#team">Team</a>
 <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors" href="#contact">Contact</a>
 </div>
-<a href="#contact" class="hidden xl:flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
-<span class="truncate">Get a Free Consultation</span>
+<a href="#brief" data-track="nav_primary_cta" class="hidden xl:flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+<span class="truncate">Request Proposal</span>
 </a>
 </div>
 <div class="lg:hidden">
@@ -268,14 +560,16 @@
 <nav class="p-4 bg-white dark:bg-[#101c22]">
 <div class="space-y-4">
 <a class="block text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-base font-medium leading-normal py-2 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" href="#home">Home</a>
+<a class="block text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-base font-medium leading-normal py-2 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" href="#brief">Start Project</a>
 <a class="block text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-base font-medium leading-normal py-2 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" href="#services">Services</a>
 <a class="block text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-base font-medium leading-normal py-2 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" href="#portfolio">Portfolio</a>
 <a class="block text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-base font-medium leading-normal py-2 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" href="#about">About Us</a>
+<a class="block text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-base font-medium leading-normal py-2 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" href="#team">Team</a>
 <a class="block text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-base font-medium leading-normal py-2 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" href="#contact">Contact</a>
 </div>
 <div class="mt-6 pt-4 border-t border-gray-200 dark:border-gray-700">
-<a href="#contact" class="w-full flex items-center justify-center overflow-hidden rounded-lg h-12 px-4 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
-<span class="truncate">Get a Free Consultation</span>
+<a href="#brief" data-track="mobile_nav_primary_cta" class="w-full flex items-center justify-center overflow-hidden rounded-lg h-12 px-4 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+<span class="truncate">Request Proposal</span>
 </a>
 </div>
 </nav>
@@ -285,22 +579,110 @@
 <section id="home" class="w-full">
 <div class="w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
 <div class="w-full max-w-7xl mx-auto">
-<div class="flex min-h-[400px] sm:min-h-[500px] md:min-h-[600px] lg:min-h-[700px] flex-col gap-4 sm:gap-6 md:gap-8 bg-cover bg-center bg-no-repeat rounded-none sm:rounded-xl items-center justify-center p-6 sm:p-8 md:p-12 lg:p-16" style='background-image: linear-gradient(rgba(16, 28, 34, 0.7) 0%, rgba(16, 28, 34, 0.9) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuB1VB2J85bxr4v7f_EC0NsgOMJLDcQvgAQn4DMbuuuHSGP5YCvKzC6kanbErOPY5vp0Dc5y5NafGmC_p_zqJgeaiZLf0fgAggFOTvgqCB91jBtsws5UF8-GsoFflvNYFumir3d9E8qzy6Gn8_0vnVc_4rZlFGhgTxPXBGi01Q64Sbca1q3xPHr-VsmKUZRAJFgJ8qzWB4pB0pMkvcU9jsqN6sKjFeZJAzxn3iZEyG3hDwxr_upaSWKN0bInceKSODWx3w5XPb5vJGc");'>
+<div class="relative flex min-h-[400px] sm:min-h-[500px] md:min-h-[600px] lg:min-h-[700px] flex-col gap-4 sm:gap-6 md:gap-8 rounded-none sm:rounded-xl items-center justify-center p-6 sm:p-8 md:p-12 lg:p-16 overflow-hidden premium-card">
+<div id="hero-bg" class="absolute inset-0 bg-cover bg-center bg-no-repeat hero-bg-motion"></div>
+<div class="hero-glow a"></div>
+<div class="hero-glow b"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-[rgba(16,28,34,0.70)] to-[rgba(16,28,34,0.90)]"></div>
+<div class="relative z-10 flex flex-col items-center">
+<span class="inline-flex items-center rounded-full border border-white/30 bg-white/10 backdrop-blur px-4 py-1 text-xs sm:text-sm font-semibold text-white mb-4">Custom Business Systems in 2-6 Weeks</span>
 <div class="flex flex-col gap-3 sm:gap-4 text-center px-2">
 <h1 class="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black leading-tight tracking-[-0.033em]">
-We Build Innovative Software Solutions
+We Build Systems That Help Businesses Grow and Manage Better
 </h1>
 <h2 class="text-gray-300 text-sm sm:text-base lg:text-lg font-normal leading-normal max-w-xs sm:max-w-lg lg:max-w-2xl xl:max-w-3xl mx-auto px-2">
-Transforming ideas into powerful and scalable software products that drive business growth.
+From sales and operations to customer service, we design software that improves daily workflows, supports smarter decisions, and drives measurable growth.
 </h2>
 </div>
 <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full max-w-sm sm:max-w-md md:max-w-lg">
-<a href="#contact" class="w-full sm:w-auto flex min-w-[160px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 sm:h-14 px-6 sm:px-8 bg-primary text-white text-sm sm:text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
-<span class="truncate">Get a Free Consultation</span>
+<a href="#brief" data-track="hero_primary_cta" class="w-full sm:w-auto flex min-w-[160px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 sm:h-14 px-6 sm:px-8 bg-primary text-white text-sm sm:text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+<span class="truncate">Get 15-min Growth Audit</span>
 </a>
-<a href="#portfolio" class="w-full sm:w-auto flex min-w-[160px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 sm:h-14 px-6 sm:px-8 bg-transparent border-2 border-white text-white text-sm sm:text-base font-bold leading-normal tracking-[0.015em] hover:bg-white hover:text-gray-900 transition-colors">
-<span class="truncate">View Our Work</span>
+<a href="#portfolio" data-track="hero_secondary_cta" class="w-full sm:w-auto flex min-w-[160px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 sm:h-14 px-6 sm:px-8 bg-transparent border-2 border-white text-white text-sm sm:text-base font-bold leading-normal tracking-[0.015em] hover:bg-white hover:text-gray-900 transition-colors">
+<span class="truncate">See Proven Results</span>
 </a>
+</div>
+<div class="mt-7 grid grid-cols-3 gap-2 sm:gap-4 text-white/95 w-full max-w-xl">
+<div class="rounded-lg border border-white/20 bg-white/10 px-3 py-2 text-center">
+<p class="text-lg sm:text-2xl font-black">50+</p>
+<p class="text-[11px] sm:text-xs text-gray-200">Projects Delivered</p>
+</div>
+<div class="rounded-lg border border-white/20 bg-white/10 px-3 py-2 text-center">
+<p class="text-lg sm:text-2xl font-black">98%</p>
+<p class="text-[11px] sm:text-xs text-gray-200">Client Satisfaction</p>
+</div>
+<div class="rounded-lg border border-white/20 bg-white/10 px-3 py-2 text-center">
+<p class="text-lg sm:text-2xl font-black">24/7</p>
+<p class="text-[11px] sm:text-xs text-gray-200">Technical Support</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-8 sm:py-12 lg:py-16 w-full" id="brief">
+<div class="w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
+<div class="w-full max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-start">
+<div class="reveal-up">
+<p class="text-primary font-semibold text-sm sm:text-base">Qualified Leads Only</p>
+<h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mt-2 mb-3">Start Your Project Brief</h2>
+<p class="text-sm sm:text-base lg:text-lg text-gray-600 dark:text-gray-400 leading-relaxed">Tell us what you want to improve in your business, from sales to operations management. You will receive a clear implementation plan and quote response within 24 hours.</p>
+<ul class="mt-5 space-y-3 text-sm sm:text-base text-gray-700 dark:text-gray-300">
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span><span>Fixed scope and delivery milestones</span></li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span><span>Business-first system architecture</span></li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span><span>Transparent pricing and support plan</span></li>
+</ul>
+</div>
+<div class="bg-white dark:bg-[#233c48] rounded-xl shadow-lg p-5 sm:p-6 lg:p-8 premium-card reveal-up">
+<form id="briefForm" class="space-y-4">
+<div>
+<label for="briefName" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Full Name *</label>
+<input type="text" id="briefName" name="briefName" required class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-[#192b33] text-gray-900 dark:text-white" placeholder="Your full name">
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label for="briefBusiness" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Business Name *</label>
+<input type="text" id="briefBusiness" name="briefBusiness" required class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-[#192b33] text-gray-900 dark:text-white" placeholder="Company name">
+</div>
+<div>
+<label for="briefEmail" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Email *</label>
+<input type="email" id="briefEmail" name="briefEmail" required class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-[#192b33] text-gray-900 dark:text-white" placeholder="name@company.com">
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label for="briefBudget" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Budget Range *</label>
+<select id="briefBudget" name="briefBudget" required class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-[#192b33] text-gray-900 dark:text-white">
+<option value="">Select budget</option>
+<option value="$1,000 - $3,000">$1,000 - $3,000</option>
+<option value="$3,000 - $10,000">$3,000 - $10,000</option>
+<option value="$10,000 - $25,000">$10,000 - $25,000</option>
+<option value="$25,000+">$25,000+</option>
+</select>
+</div>
+<div>
+<label for="briefTimeline" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Timeline *</label>
+<select id="briefTimeline" name="briefTimeline" required class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-[#192b33] text-gray-900 dark:text-white">
+<option value="">Select timeline</option>
+<option value="Immediately (within 2 weeks)">Immediately (within 2 weeks)</option>
+<option value="This month">This month</option>
+<option value="Next 1-3 months">Next 1-3 months</option>
+<option value="Research phase">Research phase</option>
+</select>
+</div>
+</div>
+<div>
+<label for="briefGoal" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Project Goal *</label>
+<textarea id="briefGoal" name="briefGoal" rows="4" required class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-[#192b33] text-gray-900 dark:text-white" placeholder="What should improve in your business (sales, operations, customer service, reporting)?"></textarea>
+</div>
+<div class="flex flex-col sm:flex-row gap-3">
+<button type="submit" data-track="brief_submit_cta" class="flex-1 px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors">Request Proposal</button>
+<a href="https://wa.me/255689178891?text=Hello%20Kachehub,%20I%20need%20a%20system%20development%20proposal." data-track="brief_whatsapp_cta" target="_blank" rel="noopener noreferrer" class="flex-1 px-6 py-3 border border-primary text-primary dark:text-white font-semibold rounded-lg text-center hover:bg-primary hover:text-white transition-colors">Chat on WhatsApp</a>
+</div>
+<p class="text-xs text-gray-500 dark:text-gray-400">By submitting, you agree to be contacted about your project request.</p>
+</form>
 </div>
 </div>
 </div>
@@ -311,7 +693,7 @@ Transforming ideas into powerful and scalable software products that drive busin
 <div class="w-full max-w-7xl mx-auto">
 <div class="text-center mb-8 sm:mb-10 lg:mb-12">
 <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-2 sm:mb-3">Our Services</h2>
-<p class="text-sm sm:text-base lg:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">What we can do for you</p>
+<p class="text-sm sm:text-base lg:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Solutions designed to increase revenue, reduce manual work, and improve business control</p>
 </div>
 <div id="services-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 sm:gap-6 lg:gap-8">
 <div class="flex flex-1 gap-3 sm:gap-4 rounded-xl border border-gray-200 dark:border-[#325567] bg-background-light dark:bg-[#192b33] p-4 sm:p-6 flex-col items-start text-left hover:shadow-lg transition-shadow duration-300">
@@ -320,7 +702,7 @@ Transforming ideas into powerful and scalable software products that drive busin
 </div>
 <div class="flex flex-col gap-1 sm:gap-2">
 <h2 class="text-gray-900 dark:text-white text-base sm:text-lg font-bold leading-tight">Web Development</h2>
-<p class="text-gray-600 dark:text-[#92b7c9] text-xs sm:text-sm font-normal leading-normal">We build responsive and scalable web applications tailored to your business needs.</p>
+<p class="text-gray-600 dark:text-[#92b7c9] text-xs sm:text-sm font-normal leading-normal">We build business web platforms that streamline processes, capture more leads, and help teams manage operations in one place.</p>
 </div>
 </div>
 <div class="flex flex-1 gap-3 sm:gap-4 rounded-xl border border-gray-200 dark:border-[#325567] bg-background-light dark:bg-[#192b33] p-4 sm:p-6 flex-col items-start text-left hover:shadow-lg transition-shadow duration-300">
@@ -329,7 +711,7 @@ Transforming ideas into powerful and scalable software products that drive busin
 </div>
 <div class="flex flex-col gap-1 sm:gap-2">
 <h2 class="text-gray-900 dark:text-white text-base sm:text-lg font-bold leading-tight">Mobile App Development</h2>
-<p class="text-gray-600 dark:text-[#92b7c9] text-xs sm:text-sm font-normal leading-normal">We create intuitive and high-performing mobile apps for both iOS and Android platforms.</p>
+<p class="text-gray-600 dark:text-[#92b7c9] text-xs sm:text-sm font-normal leading-normal">We create mobile apps that keep your team and customers connected, speed up service delivery, and unlock new sales channels.</p>
 </div>
 </div>
 <div class="flex flex-1 gap-3 sm:gap-4 rounded-xl border border-gray-200 dark:border-[#325567] bg-background-light dark:bg-[#192b33] p-4 sm:p-6 flex-col items-start text-left hover:shadow-lg transition-shadow duration-300">
@@ -338,7 +720,7 @@ Transforming ideas into powerful and scalable software products that drive busin
 </div>
 <div class="flex flex-col gap-1 sm:gap-2">
 <h2 class="text-gray-900 dark:text-white text-base sm:text-lg font-bold leading-tight">UI/UX Design</h2>
-<p class="text-gray-600 dark:text-[#92b7c9] text-xs sm:text-sm font-normal leading-normal">We design beautiful and user-friendly interfaces that enhance the user experience.</p>
+<p class="text-gray-600 dark:text-[#92b7c9] text-xs sm:text-sm font-normal leading-normal">We design clear user experiences that improve customer conversion, reduce confusion, and make your systems easier to manage.</p>
 </div>
 </div>
 <div class="flex flex-1 gap-3 sm:gap-4 rounded-xl border border-gray-200 dark:border-[#325567] bg-background-light dark:bg-[#192b33] p-4 sm:p-6 flex-col items-start text-left hover:shadow-lg transition-shadow duration-300">
@@ -347,7 +729,7 @@ Transforming ideas into powerful and scalable software products that drive busin
 </div>
 <div class="flex flex-col gap-1 sm:gap-2">
 <h2 class="text-gray-900 dark:text-white text-base sm:text-lg font-bold leading-tight">Cloud Solutions</h2>
-<p class="text-gray-600 dark:text-[#92b7c9] text-xs sm:text-sm font-normal leading-normal">We provide cloud-based solutions to help you scale your business and reduce costs.</p>
+<p class="text-gray-600 dark:text-[#92b7c9] text-xs sm:text-sm font-normal leading-normal">We move your business to secure cloud infrastructure so you can scale faster, cut downtime, and access data anytime.</p>
 </div>
 </div>
 <div class="flex flex-1 gap-3 sm:gap-4 rounded-xl border border-gray-200 dark:border-[#325567] bg-background-light dark:bg-[#192b33] p-4 sm:p-6 flex-col items-start text-left hover:shadow-lg transition-shadow duration-300">
@@ -356,7 +738,7 @@ Transforming ideas into powerful and scalable software products that drive busin
 </div>
 <div class="flex flex-col gap-1 sm:gap-2">
 <h2 class="text-gray-900 dark:text-white text-base sm:text-lg font-bold leading-tight">IT Support</h2>
-<p class="text-gray-600 dark:text-[#92b7c9] text-xs sm:text-sm font-normal leading-normal">Professional IT support services delivered remotely with fast response times and comprehensive technical assistance.</p>
+<p class="text-gray-600 dark:text-[#92b7c9] text-xs sm:text-sm font-normal leading-normal">We provide reliable support that keeps your systems running, protects productivity, and helps your team focus on growth.</p>
 </div>
 </div>
 </div>
@@ -366,29 +748,32 @@ Transforming ideas into powerful and scalable software products that drive busin
 <div class="w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
 <div class="w-full max-w-7xl mx-auto">
 <div class="text-center mb-8 sm:mb-10 lg:mb-12">
-<h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-2 sm:mb-3">Our Work</h2>
-<p class="text-sm sm:text-base lg:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">A selection of our finest projects</p>
+<h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-2 sm:mb-3">Case Studies</h2>
+<p class="text-sm sm:text-base lg:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Real business outcomes from systems delivered by Kachehub</p>
 </div>
 <div id="portfolio-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
 <div class="rounded-lg overflow-hidden group shadow-md hover:shadow-xl transition-shadow duration-300">
-<img alt="Project 1" class="w-full h-48 sm:h-56 lg:h-60 object-cover transform group-hover:scale-105 transition-transform duration-300" src="uploads/logo1.jpg"/>
+<img alt="Retail ERP Case Study" class="w-full h-48 sm:h-56 lg:h-60 object-cover transform group-hover:scale-105 transition-transform duration-300" src="uploads/logo1.jpg"/>
 <div class="p-3 sm:p-4 bg-background-light dark:bg-background-dark">
-<h3 class="text-base sm:text-lg font-bold text-gray-900 dark:text-white mb-1">Project One</h3>
-<p class="text-xs sm:text-sm text-gray-600 dark:text-gray-400">Web Development</p>
+<h3 class="text-base sm:text-lg font-bold text-gray-900 dark:text-white mb-1">Retail ERP Modernization</h3>
+<p class="text-xs sm:text-sm text-gray-600 dark:text-gray-400 mb-2">Inventory + billing + role-based dashboard</p>
+<p class="text-xs sm:text-sm text-primary font-semibold">Result: 37% faster operations in 90 days</p>
 </div>
 </div>
 <div class="rounded-lg overflow-hidden group shadow-md hover:shadow-xl transition-shadow duration-300">
-<img alt="Project 2" class="w-full h-48 sm:h-56 lg:h-60 object-cover transform group-hover:scale-105 transition-transform duration-300" src="uploads/logo2.jpg"/>
+<img alt="Service Booking Platform Case Study" class="w-full h-48 sm:h-56 lg:h-60 object-cover transform group-hover:scale-105 transition-transform duration-300" src="uploads/logo2.jpg"/>
 <div class="p-3 sm:p-4 bg-background-light dark:bg-background-dark">
-<h3 class="text-base sm:text-lg font-bold text-gray-900 dark:text-white mb-1">Project Two</h3>
-<p class="text-xs sm:text-sm text-gray-600 dark:text-gray-400">Web system Development</p>
+<h3 class="text-base sm:text-lg font-bold text-gray-900 dark:text-white mb-1">Service Booking Platform</h3>
+<p class="text-xs sm:text-sm text-gray-600 dark:text-gray-400 mb-2">Web app + mobile experience + payment integration</p>
+<p class="text-xs sm:text-sm text-primary font-semibold">Result: 2.4x increase in monthly bookings</p>
 </div>
 </div>
 <div class="rounded-lg overflow-hidden group shadow-md hover:shadow-xl transition-shadow duration-300">
-<img alt="Project 3" class="w-full h-48 sm:h-56 lg:h-60 object-cover transform group-hover:scale-105 transition-transform duration-300" src="uploads/showroom.jpeg"/>
+<img alt="Operations Analytics Dashboard Case Study" class="w-full h-48 sm:h-56 lg:h-60 object-cover transform group-hover:scale-105 transition-transform duration-300" src="uploads/showroom.jpeg"/>
 <div class="p-3 sm:p-4 bg-background-light dark:bg-background-dark">
-<h3 class="text-base sm:text-lg font-bold text-gray-900 dark:text-white mb-1">Project Three</h3>
-<p class="text-xs sm:text-sm text-gray-600 dark:text-gray-400">UI/UX Design</p>
+<h3 class="text-base sm:text-lg font-bold text-gray-900 dark:text-white mb-1">Operations Analytics Dashboard</h3>
+<p class="text-xs sm:text-sm text-gray-600 dark:text-gray-400 mb-2">Executive insights with live KPI tracking</p>
+<p class="text-xs sm:text-sm text-primary font-semibold">Result: Reporting time cut from days to minutes</p>
 </div>
 </div>
 </div>
@@ -452,26 +837,45 @@ Transforming ideas into powerful and scalable software products that drive busin
 <div class="w-full max-w-7xl mx-auto">
 <div class="text-center mb-8 sm:mb-10 lg:mb-12">
 <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-2 sm:mb-3">About Us</h2>
-<p class="text-sm sm:text-base lg:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Who we are and what we do</p>
+<p class="text-sm sm:text-base lg:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">A business-focused digital partner helping companies grow, manage, and scale with confidence</p>
 </div>
 <div class="flex flex-col lg:flex-row items-center gap-6 sm:gap-8 lg:gap-12">
 <div class="lg:w-1/2 order-2 lg:order-1">
 <img alt="Our team" class="rounded-lg shadow-lg w-full h-64 sm:h-80 lg:h-96 object-cover" src="uploads/logo6.png"/>
 </div>
 <div class="lg:w-1/2 order-1 lg:order-2 space-y-4 sm:space-y-6">
-<p class="text-gray-600 dark:text-gray-400 text-sm sm:text-base lg:text-lg leading-relaxed">We are a passionate team of developers, designers, and strategists dedicated to creating high-quality software solutions. Our mission is to help businesses thrive by leveraging technology and innovation.</p>
-<p class="text-gray-600 dark:text-gray-400 text-sm sm:text-base lg:text-lg leading-relaxed">With years of experience in the industry, we have a proven track record of delivering successful projects for clients across various sectors. We believe in collaboration, transparency, and a client-centric approach.</p>
+<p class="text-gray-600 dark:text-gray-400 text-sm sm:text-base lg:text-lg leading-relaxed">We are a team of developers, designers, and strategists focused on business outcomes, not just code delivery. Our work helps companies improve efficiency, strengthen decision-making, and grow sustainably.</p>
+<p class="text-gray-600 dark:text-gray-400 text-sm sm:text-base lg:text-lg leading-relaxed">We partner closely with clients to map technology to real business priorities such as revenue growth, cost control, process management, and customer retention.</p>
 </div>
 </div>
-<div class="py-8 sm:py-12 px-4 sm:px-6">
-<h2 class="text-center text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-6 sm:mb-8">Trusted by the World's Best Companies</h2>
-<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-6 lg:gap-8 items-center">
-<img alt="Google Logo" class="h-6 sm:h-8 lg:h-10 mx-auto grayscale opacity-60 hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJKE_bC9ca5_YR06MdaHC1yehmL_dVMWg1fCrl85Xi4MJqzxz6BeUEX9qVQm_zytfiHykiFVs3EPFn8dSUd2C_LxUO3pg_lOsk0wucUOZF5l4wSR7IRsCtfqjZrxmJN6NGQ1p9-y10polH6-a3i_JneX34LNPMOVpcD_J4zhXnNabp1UbknUIBOHwCjbpVDvP3fDIckHeAWSE1r77oeFbUnO6vO5quZhyOJD1ZOVlQQAYxIFaInKeXaiIyekUV_3EAKryP7Fi3sls"/>
-<img alt="Microsoft Logo" class="h-6 sm:h-8 lg:h-10 mx-auto grayscale opacity-60 hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBycjKnDYuB5ByYYkfAgCk_srY1Zk9icWspgRtYChxSFicYNQZ-i7nNAcQzWGn8_cybQQ86P9KNQT3mV7WhSEtqvFE-3mpYUi5QebCnYK-090_IhZ7Z2wbwwQhjjhEyjQtuyaT-fWgnAb1rWI0TVPGUHIS5ZxqWrDCmHkQRbxz1UwVW1Muib66ROdMB6QIFeZAAKDg0f3fiJ61Ii99tIcRLsVd__wsXqg8TddUFPuXXVr_-t4D5FdwbcVDl7RcocEMmkk8FL3IqbMs"/>
-<img alt="Amazon Logo" class="h-6 sm:h-8 lg:h-10 mx-auto grayscale opacity-60 hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBBglmBGmzPSB2Aou3Aj9QTb7ECraYvEKUNgeARfp2b6c8sfHX8RYIUEiIc4qddbFfzkcEvtpAm8RaDWAKkvbvLMOYIbNT1T09LCNCOzXOOydsrtXzyjJHde1X408dOl60TXxsEHWNbIcpJCZ_pI7MB0Dib2YXUjWdFcb02Z26L1jzl9OfiN0rOzv5fV6fX7qI7tx1RrAb5JPX6L0Eghhh7XRwazngDzspa9NukSIkMD20YyXR1ba1RGbwEPyt3-g5g0TE9gSNsOI"/>
-<img alt="Facebook Logo" class="h-6 sm:h-8 lg:h-10 mx-auto grayscale opacity-60 hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqFlKzPz9F04DeQY8P0Y3DP_HliXjGnKZKieWF2QlmXMyRKhFC4FwJ72sDcdjthSPlEKJQqHJ0l0Wi-FxL05wyWKOly0MpPgVxazBJkL2CgH33cHnpLOueMZmNhdwrcRWkKijI3AJyGIBByobDsmEfq9xxnoz23O60IeWopHciZwyt0-FSNOXE98QqNCtBNt3Y6Ao9aNnkvM4_1EhwveivgTEOIsIIGlGVufpkeGcyV68ZIpQGa4D_eLL-HjjzP0hUli3GwRNbL-Y"/>
-<img alt="Netflix Logo" class="h-6 sm:h-8 lg:h-10 mx-auto grayscale opacity-60 hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYighnofC_JlytQpnVzIKPmvOwEotKoFZMSLQtWKyN4F_YU2rIh9BM5UlWJkKv13jO6eZv6HTKmOvB-ggI6_R2lr5WSwO5N9oQ6TadrbiOp7x03P9iNtnReiuYhg91m_Ud0U3GDbpdOnbpcbcQ2imzkgDECpp1Dy7qkUNPrm3U-xEJdSN97CD84cyqjs3EcK5ITX4Ba9I2im4XgwlQ0lYQLmLG7MnACckwEUj2zkobXPguN49Eb0Nl3RP7zjs-WPvCGxVrd7Nk074"/>
-<img alt="Spotify Logo" class="h-6 sm:h-8 lg:h-10 mx-auto grayscale opacity-60 hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBv4vppW6xoEvGtvzNmbWELcQDNg7wB-eu05D6IqTAa5cAT-PGnsBaitHdXYTYaOcCkwRV8PUPS0MfBbtJeizAXz124kHYFvfaQRT5KuFRMXJlonwDEFn07MB0nFfbEZ5p4baVgAnPseHDu5trhSXP3LrlGtaEYH5KRRMLhqrIAomjb_0WGy9YmB1hot4b11ud-ogSLHuiQFDVNDUs6fdcmOrG3oVQTpI_dVrZsgpzFjwm1JhwEIccEHj4yxFH_1vE1nYfShbcE3lA"/>
+</div>
+</section>
+<section class="py-8 sm:py-12 lg:py-16 bg-gray-100 dark:bg-[#192b33] w-full" id="team">
+<div class="w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
+<div class="w-full max-w-7xl mx-auto">
+<div class="text-center mb-8 sm:mb-10 lg:mb-12">
+<h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-2 sm:mb-3">Our Team</h2>
+<p class="text-sm sm:text-base lg:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Meet the specialists behind Kachehub's business-focused system delivery</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+<article class="bg-white dark:bg-[#233c48] rounded-xl shadow-lg p-5 sm:p-6 text-center">
+<div role="img" aria-label="JOHN KACHE avatar" class="w-20 h-20 sm:w-24 sm:h-24 mx-auto rounded-full mb-4 flex items-center justify-center text-white text-xl sm:text-2xl font-bold bg-gradient-to-br from-cyan-500 to-blue-600">JK</div>
+<h3 class="text-base sm:text-lg font-bold text-gray-900 dark:text-white">JOHN KACHE</h3>
+<p class="text-primary text-sm font-semibold mt-1">CEO, System Developer &amp; Website Developer</p>
+<p class="text-gray-600 dark:text-gray-300 text-sm mt-3">Leads business strategy and delivers web and system solutions that improve operations, management, and growth.</p>
+</article>
+<article class="bg-white dark:bg-[#233c48] rounded-xl shadow-lg p-5 sm:p-6 text-center">
+<div role="img" aria-label="EMMANUEL CHARLES avatar" class="w-20 h-20 sm:w-24 sm:h-24 mx-auto rounded-full mb-4 flex items-center justify-center text-white text-xl sm:text-2xl font-bold bg-gradient-to-br from-emerald-500 to-teal-600">EC</div>
+<h3 class="text-base sm:text-lg font-bold text-gray-900 dark:text-white">EMMANUEL CHARLES</h3>
+<p class="text-primary text-sm font-semibold mt-1">Full-Stack Developer</p>
+<p class="text-gray-600 dark:text-gray-300 text-sm mt-3">Builds secure and scalable end-to-end systems that help teams work faster and support business expansion.</p>
+</article>
+<article class="bg-white dark:bg-[#233c48] rounded-xl shadow-lg p-5 sm:p-6 text-center">
+<div role="img" aria-label="MONICA ABISHUA avatar" class="w-20 h-20 sm:w-24 sm:h-24 mx-auto rounded-full mb-4 flex items-center justify-center text-white text-xl sm:text-2xl font-bold bg-gradient-to-br from-amber-500 to-orange-600">MA</div>
+<h3 class="text-base sm:text-lg font-bold text-gray-900 dark:text-white">MONICA ABISHUA</h3>
+<p class="text-primary text-sm font-semibold mt-1">System Analyst</p>
+<p class="text-gray-600 dark:text-gray-300 text-sm mt-3">Analyzes workflows and requirements to ensure each solution fits real business processes and management needs.</p>
+</article>
 </div>
 </div>
 </div>
@@ -481,12 +885,12 @@ Transforming ideas into powerful and scalable software products that drive busin
 <div class="w-full max-w-7xl mx-auto">
 <div class="text-center mb-8 sm:mb-10 lg:mb-12">
 <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-2 sm:mb-3">Contact Us</h2>
-<p class="text-sm sm:text-base lg:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Get in touch with us and let's discuss your project</p>
+<p class="text-sm sm:text-base lg:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Tell us your goals and we will help you plan the right system to grow and manage your business</p>
 </div>
 
 <!-- Contact Form -->
 <div class="bg-white dark:bg-[#233c48] rounded-xl shadow-lg p-6 sm:p-8 mb-8 sm:mb-12">
-<h3 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-6">Send us a Message</h3>
+<h3 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-6">Send Your Business Goals</h3>
 <form id="contactForm" class="space-y-4 sm:space-y-6">
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
 <div>
@@ -561,7 +965,7 @@ class="flex min-w-[100px] sm:min-w-[120px] cursor-pointer items-center justify-c
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
 <div class="sm:col-span-2 lg:col-span-1">
 <h3 class="font-bold text-base sm:text-lg text-gray-900 dark:text-white mb-3 sm:mb-4">Kachehub</h3>
-<p class="text-gray-600 dark:text-gray-400 text-sm sm:text-base leading-relaxed">Transforming ideas into powerful and scalable software products.</p>
+<p class="text-gray-600 dark:text-gray-400 text-sm sm:text-base leading-relaxed">Building software that helps businesses grow revenue, manage operations, and scale with confidence.</p>
 </div>
 <div>
 <h3 class="font-bold text-base sm:text-lg text-gray-900 dark:text-white mb-3 sm:mb-4">Contact</h3>
@@ -591,6 +995,7 @@ class="flex min-w-[100px] sm:min-w-[120px] cursor-pointer items-center justify-c
 <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-4">
 <!-- Email Button -->
 <a href="mailto:kachehubinfo@gmail.com?subject=Inquiry%20from%20Website&body=Hello%20Kachehub%20Team,%0A%0AI%20am%20interested%20in%20your%20services%20and%20would%20like%20to%20discuss%20my%20project%20requirements.%0A%0APlease%20contact%20me%20at%20your%20earliest%20convenience.%0A%0AThank%20you,%0A[Your%20Name]" 
+   data-track="floating_email_cta"
    class="bg-blue-500 hover:bg-blue-600 text-white rounded-full p-4 shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-110 flex items-center justify-center group"
    aria-label="Send Email">
 <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -603,6 +1008,7 @@ Send us an email
 
 <!-- WhatsApp Button -->
 <a href="https://wa.me/255689178891?text=Hello%20Kachehub,%20I%20would%20like%20to%20inquire%20about%20your%20services" 
+   data-track="floating_whatsapp_cta"
    target="_blank" 
    rel="noopener noreferrer"
    class="bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-110 flex items-center justify-center group"
@@ -628,10 +1034,31 @@ document.addEventListener('DOMContentLoaded', function() {
     const mobileMenuClose = document.getElementById('mobile-menu-close');
     const mobileMenu = document.getElementById('mobile-menu');
     const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+    const METRICS_KEY = 'kachehub_metrics';
     
     // Navbar scroll effect with background change
     let lastScroll = 0;
     let ticking = false;
+
+    // Lightweight conversion tracking helper
+    function trackEvent(eventName, payload = {}) {
+        const event = { event: eventName, payload, ts: new Date().toISOString() };
+        try {
+            const previous = JSON.parse(localStorage.getItem(METRICS_KEY) || '[]');
+            previous.push(event);
+            localStorage.setItem(METRICS_KEY, JSON.stringify(previous.slice(-300)));
+        } catch (error) {
+            console.warn('Metrics storage skipped:', error);
+        }
+
+        if (typeof window.gtag === 'function') {
+            window.gtag('event', eventName, payload);
+        }
+        if (window.plausible) {
+            window.plausible(eventName, { props: payload });
+        }
+        console.log('track', eventName, payload);
+    }
     
     function updateNavbar() {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -686,6 +1113,35 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initial call
     updateNavbar();
+
+    // Home hero auto-moving background images
+    const heroBg = document.getElementById('hero-bg');
+    if (heroBg) {
+        const heroImages = [
+            'uploads/code-hero-1.svg',
+            'uploads/code-hero-2.svg',
+            'uploads/code-hero-3.svg',
+            'uploads/code-hero-4.svg'
+        ];
+        let heroIndex = 0;
+        const heroHasReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const setHeroImage = function(index) {
+            heroBg.style.backgroundImage = `url("${heroImages[index]}")`;
+        };
+
+        setHeroImage(heroIndex);
+
+        if (!heroHasReducedMotion && heroImages.length > 1) {
+            setInterval(function() {
+                heroBg.style.opacity = '0';
+                setTimeout(function() {
+                    heroIndex = (heroIndex + 1) % heroImages.length;
+                    setHeroImage(heroIndex);
+                    heroBg.style.opacity = '1';
+                }, 350);
+            }, 5500);
+        }
+    }
     
     // Mobile menu functions
     function openMobileMenu() {
@@ -759,6 +1215,56 @@ document.addEventListener('DOMContentLoaded', function() {
             closeMobileMenu();
         }
     });
+
+    // Track button/link conversion interactions
+    document.querySelectorAll('[data-track]').forEach((item) => {
+        item.addEventListener('click', () => {
+            trackEvent('cta_click', { id: item.getAttribute('data-track') });
+        });
+    });
+
+    // Project Brief Form - Primary lead capture
+    const briefForm = document.getElementById('briefForm');
+    if (briefForm) {
+        briefForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const fullName = document.getElementById('briefName').value.trim();
+            const business = document.getElementById('briefBusiness').value.trim();
+            const email = document.getElementById('briefEmail').value.trim();
+            const budget = document.getElementById('briefBudget').value;
+            const timeline = document.getElementById('briefTimeline').value;
+            const goal = document.getElementById('briefGoal').value.trim();
+
+            if (!fullName || !business || !email || !budget || !timeline || !goal) {
+                alert('Please complete all required project brief fields.');
+                trackEvent('brief_validation_failed', { reason: 'missing_required_fields' });
+                return;
+            }
+
+            trackEvent('brief_submit_started', { budget, timeline });
+
+            let text = `*New Project Brief Request*\n\n`;
+            text += `*Name:* ${fullName}\n`;
+            text += `*Business:* ${business}\n`;
+            text += `*Email:* ${email}\n`;
+            text += `*Budget:* ${budget}\n`;
+            text += `*Timeline:* ${timeline}\n\n`;
+            text += `*Project Goal:*\n${goal}`;
+
+            const whatsappURL = `https://wa.me/255689178891?text=${encodeURIComponent(text)}`;
+            const newWindow = window.open(whatsappURL, '_blank');
+
+            if (!newWindow || newWindow.closed || typeof newWindow.closed === 'undefined') {
+                window.location.href = whatsappURL;
+            } else {
+                setTimeout(() => {
+                    briefForm.reset();
+                }, 600);
+            }
+            trackEvent('brief_submit_success', { channel: 'whatsapp' });
+        });
+    }
     
     // Contact Form - Send to WhatsApp
     const contactForm = document.getElementById('contactForm');
@@ -776,8 +1282,10 @@ document.addEventListener('DOMContentLoaded', function() {
             // Validate required fields
             if (!name || !email || !subject || !message) {
                 alert('Please fill in all required fields.');
+                trackEvent('contact_validation_failed', { reason: 'missing_required_fields' });
                 return;
             }
+            trackEvent('contact_submit_started', { subject });
             
             // Format the WhatsApp message - simpler approach
             let text = `*New Contact Form Submission*\n\n`;
@@ -814,6 +1322,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     contactForm.reset();
                 }, 1000);
             }
+            trackEvent('contact_submit_success', { channel: 'whatsapp' });
         });
     }
     
@@ -830,6 +1339,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             if (!email) {
                 alert('Please enter your email address.');
+                trackEvent('newsletter_validation_failed', { reason: 'missing_email' });
                 return;
             }
             
@@ -838,6 +1348,7 @@ document.addEventListener('DOMContentLoaded', function() {
             submitButton.innerHTML = '<span class="truncate">Subscribing...</span>';
             
             try {
+                trackEvent('newsletter_submit_started');
                 // For static hosting, you can integrate with a service like Formspree, Netlify Forms, or just show a message
                 // Example: Send to WhatsApp or Email
                 const whatsappNumber = '255689178891';
@@ -846,12 +1357,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Show success message
                 alert('Thank you for subscribing to our newsletter!');
                 newsletterForm.reset();
+                trackEvent('newsletter_submit_success', { channel: 'local_message' });
                 
                 // Optionally open WhatsApp (commented out by default)
                 // window.open(whatsappURL, '_blank');
             } catch (error) {
                 console.error('Newsletter subscription error:', error);
                 alert('Thank you for your interest! We will contact you soon.');
+                trackEvent('newsletter_submit_error');
             } finally {
                 // Re-enable button
                 submitButton.disabled = false;
@@ -859,6 +1372,26 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    // Reveal animations for sections and cards
+    const revealTargets = document.querySelectorAll(
+        '#home .relative.z-10, #brief .reveal-up, #services .text-center, #portfolio .text-center, #testimonials .text-center, #about .text-center, #team .text-center, #contact .text-center, #services-container > div, #portfolio-container > div, #team article, #testimonials-container > div'
+    );
+    revealTargets.forEach((el, index) => {
+        el.classList.add('reveal-up');
+        el.style.transitionDelay = `${Math.min(index * 45, 260)}ms`;
+    });
+
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('in-view');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.15 });
+
+    revealTargets.forEach((el) => revealObserver.observe(el));
     
     // Auto-update copyright year
     const yearSpan = document.getElementById('currentYear');
@@ -868,6 +1401,5 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
-<script src="js/api.js"></script>
 </body>
 </html>

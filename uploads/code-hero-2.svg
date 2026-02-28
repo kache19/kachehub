@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#101724"/>
+      <stop offset="100%" stop-color="#1b2b44"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg2)"/>
+  <rect x="90" y="90" width="1420" height="720" rx="18" fill="#0f1d31" stroke="#334d79"/>
+  <g font-family="Consolas, monospace" font-size="24">
+    <text x="150" y="180" fill="#ffca85">import</text>
+    <text x="240" y="180" fill="#b7d6ff"> { api, auth, db } </text>
+    <text x="510" y="180" fill="#ffca85">from</text>
+    <text x="590" y="180" fill="#9ff0c7"> "./platform"</text>
+    <text x="150" y="240" fill="#9ecbff">async function launchProduct() {</text>
+    <text x="190" y="300" fill="#d2e7ff">const user = await auth.signIn();</text>
+    <text x="190" y="360" fill="#d2e7ff">const data = await api.fetchDashboard(user.id);</text>
+    <text x="190" y="420" fill="#d2e7ff">await db.save("metrics", data);</text>
+    <text x="190" y="480" fill="#9ff0c7">return "ready";</text>
+    <text x="150" y="540" fill="#9ecbff">}</text>
+    <text x="150" y="620" fill="#ff8fa3">// scalable architecture, clean delivery</text>
+  </g>
+</svg>

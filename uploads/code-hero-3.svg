@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111a1a"/>
+      <stop offset="100%" stop-color="#183333"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg3)"/>
+  <rect x="80" y="100" width="1440" height="700" rx="16" fill="#0f2525" stroke="#3b6d6d"/>
+  <g font-family="Consolas, monospace" font-size="24" fill="#bdf5f0">
+    <text x="140" y="190">class ProjectPipeline {</text>
+    <text x="180" y="250">constructor(team) { this.team = team; }</text>
+    <text x="180" y="310">plan(scope) { return estimate(scope).timeline; }</text>
+    <text x="180" y="370">develop(features) { return features.map(build); }</text>
+    <text x="180" y="430">test(system) { return qa.validate(system); }</text>
+    <text x="180" y="490">deploy(app) { return cloud.release(app); }</text>
+    <text x="140" y="550">}</text>
+    <text x="140" y="630">// secure, maintainable, business-ready systems</text>
+  </g>
+</svg>
