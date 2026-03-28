@@ -1,1405 +1,641 @@
 <!DOCTYPE html>
-<html class="dark" lang="en">
-<head>
+
+<html class="dark" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Kachehub | System Developer & Software Solutions</title>
-<meta name="description" content="Kachehub helps businesses grow and manage operations through web systems, mobile apps, UI/UX design, cloud solutions, and IT support."/>
-<meta name="keywords" content="Kachehub, system developer, software development, web development, mobile app development, UI UX design, cloud solutions, IT support"/>
-<meta name="author" content="Kachehub"/>
-<meta name="robots" content="index, follow, max-image-preview:large"/>
-<meta name="theme-color" content="#101c22"/>
-<link rel="canonical" href="https://kachehub.com/"/>
-
-<meta property="og:type" content="website"/>
-<meta property="og:title" content="Kachehub | System Developer & Software Solutions"/>
-<meta property="og:description" content="Business-focused systems that help companies grow revenue, manage operations, and scale confidently."/>
-<meta property="og:url" content="https://kachehub.com/"/>
-<meta property="og:site_name" content="Kachehub"/>
-<meta property="og:image" content="https://kachehub.com/uploads/logo7.jpg"/>
-<meta property="og:image:alt" content="Kachehub logo"/>
-<meta property="og:locale" content="en_US"/>
-
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Kachehub | System Developer & Software Solutions"/>
-<meta name="twitter:description" content="Software solutions that help businesses grow, manage workflows, and scale with confidence."/>
-<meta name="twitter:image" content="https://kachehub.com/uploads/logo7.jpg"/>
-<link rel="icon" type="image/jpeg" href="uploads/logo7.jpg"/>
-<link rel="apple-touch-icon" href="uploads/logo7.jpg"/>
+<title>KACHEHUB | Premium Digital Systems</title>
+<meta content="Kachehub builds premium websites, web systems, and mobile apps for businesses that need speed, scalability, and reliable digital operations." name="description"/>
+<meta content="Kachehub, web development, web systems, ERP, CRM, mobile apps, software development, Tanzania" name="keywords"/>
+<meta content="Kachehub" name="author"/>
+<meta content="index, follow, max-image-preview:large" name="robots"/>
+<meta content="#090909" name="theme-color"/>
+<link href="https://kachehub.com/" rel="canonical"/>
+<meta content="website" property="og:type"/>
+<meta content="KACHEHUB | Premium Digital Systems" property="og:title"/>
+<meta content="Premium websites, business systems, and mobile apps built for speed, scalability, and growth." property="og:description"/>
+<meta content="https://kachehub.com/" property="og:url"/>
+<meta content="Kachehub" property="og:site_name"/>
+<meta content="https://kachehub.com/uploads/logo7.jpg" property="og:image"/>
+<meta content="Kachehub logo" property="og:image:alt"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="KACHEHUB | Premium Digital Systems" name="twitter:title"/>
+<meta content="Premium websites, business systems, and mobile apps built for speed, scalability, and growth." name="twitter:description"/>
+<meta content="https://kachehub.com/uploads/logo7.jpg" name="twitter:image"/>
+<link href="uploads/logo7.jpg" rel="icon" type="image/jpeg"/>
+<link href="uploads/logo7.jpg" rel="apple-touch-icon"/>
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "Kachehub",
-  "url": "https://kachehub.com/",
-  "logo": "https://kachehub.com/uploads/logo7.jpg",
-  "image": "https://kachehub.com/uploads/logo7.jpg",
-  "description": "Kachehub helps businesses grow and manage operations through web development, mobile apps, UI/UX design, cloud solutions, and IT support.",
-  "email": "kachehubinfo@gmail.com",
-  "telephone": "+255689178891",
-  "areaServed": "TZ",
-  "serviceType": [
-    "System Development",
-    "Web Development",
-    "Mobile App Development",
-    "UI/UX Design",
-    "Cloud Solutions",
-    "IT Support"
-  ],
-  "sameAs": [
-    "https://wa.me/255689178891"
-  ]
-}
-</script>
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Kachehub",
+        "url": "https://kachehub.com/",
+        "logo": "https://kachehub.com/uploads/logo7.jpg",
+        "image": "https://kachehub.com/uploads/logo7.jpg",
+        "description": "Kachehub builds premium websites, web systems, and mobile apps for businesses that need speed, scalability, and reliable digital operations.",
+        "email": "hello@kachehub.com",
+        "telephone": "+255689178891",
+        "areaServed": "TZ",
+        "serviceType": [
+          "Website Development",
+          "Web Systems",
+          "Mobile App Development"
+        ],
+        "sameAs": [
+          "https://wa.me/255689178891"
+        ]
+      }
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;family=Montserrat:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=DM+Sans:wght@400;500;600;700;800&family=Material+Symbols+Outlined&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "error": "#ffb4ab",
+              "surface-container": "#131313",
+              "primary-fixed-dim": "#00FF88",
+              "background": "#090909",
+              "on-tertiary-container": "#a5ffd6",
+              "on-primary": "#00391c",
+              "error-container": "#93000a",
+              "on-tertiary-fixed": "#002110",
+              "primary": "#00FF88",
+              "surface-bright": "#222222",
+              "primary-fixed": "#00FF88",
+              "on-error": "#690005",
+              "tertiary-fixed": "#ecdcff",
+              "surface-tint": "#00FF88",
+              "on-secondary": "#000000",
+              "surface": "#090909",
+              "tertiary-container": "#004024",
+              "surface-dim": "#090909",
+              "inverse-primary": "#006d3a",
+              "on-surface-variant": "#adaaaa",
+              "outline-variant": "#494847",
+              "tertiary": "#00FF88",
+              "on-surface": "#eeeeee",
+              "on-secondary-container": "#00FF88",
+              "secondary": "#ffffff",
+              "inverse-surface": "#eeeeee",
+              "surface-container-low": "#0e0e0e",
+              "surface-variant": "#1a1919",
+              "tertiary-fixed-dim": "#00FF88",
+              "on-primary-fixed": "#002110",
+              "secondary-container": "#1a1919",
+              "surface-container-high": "#1a1919",
+              "primary-container": "#00FF88",
+              "surface-container-lowest": "#000000",
+              "on-background": "#eeeeee",
+              "secondary-fixed": "#ffffff",
+              "inverse-on-surface": "#131313",
+              "on-primary-fixed-variant": "#00522e",
+              "secondary-fixed-dim": "#ffffff",
+              "on-secondary-fixed": "#000000",
+              "surface-container-highest": "#222222",
+              "on-tertiary": "#00391c",
+              "on-primary-container": "#002110",
+              "on-tertiary-fixed-variant": "#00522e",
+              "outline": "#8a8a8a",
+              "on-secondary-fixed-variant": "#1a1919",
+              "on-error-container": "#ffdad6"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk", "sans-serif"],
+              "body": ["Inter", "sans-serif"],
+              "label": ["Inter", "sans-serif"],
+              "space": ["Space Grotesk", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
 <style>
-        .material-symbols-outlined {
-            font-variation-settings:
-            'FILL' 0,
-            'wght' 400,
-            'GRAD' 0,
-            'opsz' 24
-        }
-        .no-scrollbar {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-        .no-scrollbar::-webkit-scrollbar {
-            display: none;
-        }
-        /* Enhanced Mobile Menu Animations */
-        @media (max-width: 1024px) {
-            .mobile-menu {
-                transform: translateX(-100%);
-                transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            }
-            .mobile-menu.active {
-                transform: translateX(0);
-            }
-        }
-        
-        /* Improved Focus States */
-        *:focus {
-            outline: 2px solid #1193d4;
-            outline-offset: 2px;
-        }
-        
-        /* Enhanced Transitions */
-        * {
-            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-duration: 150ms;
-        }
-        
-        /* Fixed Navbar Specific Styles */
-        header {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
-            will-change: background-color, box-shadow, backdrop-filter;
-            border-bottom-color: var(--line) !important;
-            background: rgba(8, 19, 29, 0.82) !important;
-            box-shadow: 0 16px 40px rgba(2, 10, 17, 0.45);
-        }
-        
-        /* Ensure content doesn't jump under fixed header */
-        main {
-            scroll-margin-top: 80px;
-        }
-        
-        section {
-            scroll-margin-top: 80px;
-        }
-        
-        /* Better Text Rendering */
-        body {
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            text-rendering: optimizeLegibility;
-            background:
-                radial-gradient(1000px 540px at 8% -8%, rgba(20, 184, 166, 0.20), transparent 60%),
-                radial-gradient(920px 520px at 100% 0%, rgba(14, 165, 233, 0.18), transparent 58%),
-                linear-gradient(180deg, #08131d 0%, #091824 45%, #0a1720 100%);
-            color: #e6eef7;
-            position: relative;
-        }
-        
-        /* Smooth Scroll Behavior */
         html {
             scroll-behavior: smooth;
         }
-
-        :root {
-            --accent: #0ea5cf;
-            --accent-2: #22d3ee;
-            --accent-warm: #f59e0b;
-            --bg-base: #08131d;
-            --bg-elev: #0f2230;
-            --surface: #112738;
-            --surface-2: #143145;
-            --line: rgba(147, 197, 253, 0.22);
-            --text-soft: #95aec2;
-            --font-heading: "Chakra Petch", "Segoe UI", sans-serif;
-            --font-body: "DM Sans", "Segoe UI", sans-serif;
-        }
-
-        body::before,
-        body::after {
-            content: "";
-            position: fixed;
-            inset: 0;
-            pointer-events: none;
-            z-index: -1;
-        }
-
-        body::before {
-            background:
-                radial-gradient(440px 260px at 12% 18%, rgba(20, 184, 166, 0.20), transparent 72%),
-                radial-gradient(520px 320px at 84% 12%, rgba(14, 165, 233, 0.18), transparent 72%),
-                radial-gradient(620px 340px at 50% 100%, rgba(245, 158, 11, 0.10), transparent 75%);
-            filter: blur(10px);
-        }
-
-        body::after {
-            background-image:
-                linear-gradient(rgba(20, 184, 166, 0.05) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(20, 184, 166, 0.05) 1px, transparent 1px);
-            background-size: 36px 36px;
-            mask-image: radial-gradient(circle at center, black 20%, transparent 78%);
-            opacity: 0.45;
-        }
-
-        h1, h2, h3, h4 {
-            font-family: var(--font-heading);
-            letter-spacing: -0.03em;
-        }
-
-        p, li, a, button, input, select, textarea, label, span {
-            font-family: var(--font-body);
-        }
-        
-        /* Loading State */
-        body:not(.loaded) {
-            overflow: hidden;
-        }
-        
-        /* Enhanced Hover States for Better UX */
-        @media (hover: hover) {
-            .hover\:scale-105:hover {
-                transform: scale(1.05);
-            }
-            
-            .hover\:shadow-2xl:hover {
-                box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-            }
-        }
-        
-        /* Critical Mobile Responsiveness Fixes */
         html, body {
             overflow-x: hidden;
-            width: 100%;
-            max-width: 100vw;
         }
-        
-        * {
-            box-sizing: border-box;
+        .glass {
+            background: rgba(19, 19, 19, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
         }
-        
-        /* Prevent content from extending beyond viewport */
-        .layout-content-container {
-            max-width: 100vw;
-            overflow-x: hidden;
+        .text-glow {
+            text-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
         }
-        
-        /* Mobile-specific optimizations */
-        @media (max-width: 640px) {
-            /* Prevent horizontal scroll */
-            body, html {
-                overflow-x: hidden !important;
-                width: 100% !important;
-                max-width: 100vw !important;
-            }
-            
-            /* Optimize touch targets */
-            button, a {
-                min-height: 44px;
-                min-width: 44px;
-            }
-            
-            /* Better text sizes for mobile */
-            .text-xs { font-size: 0.75rem; }
-            .text-sm { font-size: 0.875rem; }
-            .text-base { font-size: 1rem; }
-            
-            /* Fix container widths */
-            .container, .max-w-7xl, .layout-content-container {
-                width: 100% !important;
-                max-width: 100vw !important;
-                margin-left: 0 !important;
-                margin-right: 0 !important;
-            }
-            
-            /* Ensure sections don't overflow */
-            section {
-                width: 100% !important;
-                max-width: 100vw !important;
-                overflow-x: hidden !important;
-            }
+        .neon-border-hover:hover {
+            box-shadow: 0 0 15px rgba(0, 255, 136, 0.3);
+            border: 1px solid rgba(0, 255, 136, 0.4);
         }
-        
-        /* Tablet optimizations */
-        @media (min-width: 641px) and (max-width: 1024px) {
-            /* Optimize for tablet layouts */
-            .container {
-                padding-left: 1.5rem;
-                padding-right: 1.5rem;
-            }
-        }
-        
-        /* High DPI screen optimizations */
-        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-            img {
-                image-rendering: -webkit-optimize-contrast;
-                image-rendering: crisp-edges;
-            }
-        }
-        
-        /* Reduce motion for accessibility */
-        @media (prefers-reduced-motion: reduce) {
-            * {
-                animation-duration: 0.01ms !important;
-                animation-iteration-count: 1 !important;
-                transition-duration: 0.01ms !important;
-            }
-            
-            html {
-                scroll-behavior: auto;
-            }
-        }
-        
-        /* Dark mode optimizations */
-        @media (prefers-color-scheme: dark) {
-            :root {
-                color-scheme: dark;
-            }
-        }
-        
-        /* Print styles */
-        @media print {
-            .no-print {
-                display: none !important;
-            }
-            
-            * {
-                background: transparent !important;
-                color: black !important;
-                box-shadow: none !important;
-                text-shadow: none !important;
-            }
-        }
-
-        /* Home hero moving background */
-        #hero-bg {
-            opacity: 1;
-            transition: opacity 700ms ease;
-        }
-
-        .hero-bg-motion {
-            animation: hero-pan 16s ease-in-out infinite alternate;
-            will-change: transform, background-position;
-        }
-
-        .hero-glow {
-            position: absolute;
-            border-radius: 9999px;
-            filter: blur(30px);
-            opacity: 0.35;
-            pointer-events: none;
-            animation: float-glow 10s ease-in-out infinite alternate;
-        }
-
-        .hero-glow.a {
-            width: 280px;
-            height: 280px;
-            background: rgba(17, 147, 212, 0.45);
-            top: -80px;
-            left: -60px;
-        }
-
-        .hero-glow.b {
-            width: 260px;
-            height: 260px;
-            background: rgba(24, 180, 240, 0.35);
-            bottom: -90px;
-            right: -50px;
-            animation-delay: 1.3s;
-        }
-
-        .premium-card {
-            border: 1px solid var(--line);
-            box-shadow: 0 20px 45px rgba(2, 10, 17, 0.46);
-            backdrop-filter: blur(10px);
-            background: linear-gradient(160deg, rgba(17, 39, 56, 0.88), rgba(11, 27, 39, 0.88));
-        }
-
-        .section-title {
-            letter-spacing: -0.02em;
-        }
-
-        section > div > div > div.text-center > h2 {
-            letter-spacing: -0.025em;
-            line-height: 1.15;
-        }
-
-        #services-container > div,
-        #portfolio-container > div,
-        #team article,
-        #testimonials-container > div > div {
-            border: 1px solid var(--line);
-            box-shadow: 0 18px 34px rgba(2, 10, 17, 0.35);
-            border-radius: 1rem;
-            background: linear-gradient(165deg, rgba(17, 39, 56, 0.96), rgba(12, 30, 42, 0.96));
-            position: relative;
-            overflow: hidden;
-        }
-
-        #services-container > div::before,
-        #portfolio-container > div::before,
-        #team article::before,
-        #testimonials-container > div > div::before {
-            content: "";
-            position: absolute;
-            inset: 0 0 auto 0;
-            height: 2px;
-            background: linear-gradient(90deg, transparent, rgba(34, 211, 238, 0.85), transparent);
-        }
-
-        #services-container > div:hover,
-        #portfolio-container > div:hover,
-        #team article:hover,
-        #testimonials-container > div > div:hover {
-            transform: translateY(-7px);
-            box-shadow: 0 26px 45px rgba(2, 10, 17, 0.48);
-        }
-
-        #home h1 {
-            text-shadow: 0 8px 34px rgba(0, 0, 0, 0.45);
-        }
-
-        #home h2 {
-            color: #c3d7e8;
-        }
-
-        #services,
-        #about,
-        #testimonials {
-            background: linear-gradient(180deg, rgba(8, 19, 29, 0.45), rgba(8, 19, 29, 0.82));
-        }
-
-        #portfolio,
-        #team,
-        #contact {
-            background: linear-gradient(180deg, rgba(11, 28, 40, 0.80), rgba(8, 19, 29, 0.96)) !important;
-        }
-
-        #portfolio-container p,
-        #about p,
-        #contact p,
-        #team p,
-        #testimonials p {
-            color: var(--text-soft);
-        }
-
-        .bg-primary,
-        a.bg-primary,
-        button.bg-primary {
-            background-image: linear-gradient(135deg, var(--accent), var(--accent-2));
-            box-shadow: 0 10px 24px rgba(6, 78, 108, 0.42);
-            border: none;
-        }
-
-        .bg-primary:hover,
-        a.bg-primary:hover,
-        button.bg-primary:hover {
-            transform: translateY(-1px);
-            box-shadow: 0 16px 28px rgba(6, 78, 108, 0.55);
-        }
-
-        .border-primary {
-            border-color: rgba(34, 211, 238, 0.75) !important;
-            color: #7fe7ff !important;
-        }
-
-        input, select, textarea {
-            border-color: rgba(148, 163, 184, 0.34) !important;
-            background: rgba(11, 27, 39, 0.88) !important;
-            color: #e6eef7 !important;
-        }
-
-        input::placeholder,
-        textarea::placeholder {
-            color: #8ba7bb !important;
-        }
-
-        input:focus, select:focus, textarea:focus {
-            box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.20);
-            border-color: rgba(34, 211, 238, 0.75) !important;
-        }
-
-        footer {
-            border-top-color: var(--line) !important;
-            background: rgba(8, 19, 29, 0.88);
-        }
-
-        .reveal-up {
-            opacity: 0;
-            transform: translateY(24px);
-            transition: opacity 500ms ease, transform 500ms ease;
-        }
-
-        .reveal-up.in-view {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        @keyframes hero-pan {
-            0% {
-                transform: scale(1);
-                background-position: 50% 50%;
-            }
-            100% {
-                transform: scale(1.12);
-                background-position: 56% 44%;
-            }
-        }
-
-        @keyframes float-glow {
-            0% { transform: translate3d(0, 0, 0) scale(1); }
-            100% { transform: translate3d(16px, -12px, 0) scale(1.08); }
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-            .hero-bg-motion {
-                animation: none !important;
-            }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
     </style>
-<script id="tailwind-config">
-        tailwind.config = {
-          darkMode: "class",
-          theme: {
-            extend: {
-              colors: {
-                "primary": "#0ea5cf",
-                "background-light": "#f6f7f8",
-                "background-dark": "#101c22",
-              },
-              fontFamily: {
-                "display": ["Chakra Petch", "Noto Sans", "sans-serif"],
-                "body": ["DM Sans", "Noto Sans", "sans-serif"]
-              },
-              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
-            },
-          },
-        }
-      </script>
 </head>
-<body class="bg-background-light dark:bg-background-dark font-body text-base text-gray-800 dark:text-gray-200">
-<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
-<div class="layout-container flex h-full grow flex-col">
-<div class="w-full flex flex-1 justify-center">
-<div class="layout-content-container flex flex-col w-full flex-1">
-<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 dark:border-b-[#233c48] px-4 sm:px-6 md:px-8 lg:px-12 py-3 sm:py-4 fixed top-0 left-0 right-0 w-full bg-background-light dark:bg-background-dark z-50 backdrop-blur-md bg-opacity-95 dark:bg-opacity-95">
-<div class="flex items-center gap-3 sm:gap-4 text-gray-900 dark:text-white">
-<div class="size-8 sm:size-10">
-<img src="uploads/logo6.png" alt="Kachehub Logo" class="w-full h-full object-contain rounded-full"/>
+<body class="bg-background text-on-background font-body selection:bg-primary/30">
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-[#0e0e0e]/80 backdrop-blur-xl border-b border-[#494847]/15 shadow-[0_20px_40px_rgba(0,255,136,0.05)]">
+<div class="flex justify-between items-center gap-4 px-4 sm:px-6 lg:px-8 py-4 max-w-7xl mx-auto">
+<div class="text-xl sm:text-2xl font-bold tracking-tighter text-white font-['Space_Grotesk']">KACHEHUB</div>
+<div class="hidden md:flex gap-8 items-center font-['Space_Grotesk'] tracking-tight">
+<a class="text-[#00FF88] border-b-2 border-[#00FF88] pb-1 uppercase text-xs font-bold" href="#services">Services</a>
+<a class="text-[#adaaaa] hover:text-white transition-colors uppercase text-xs font-bold" href="#why-us">Why Us</a>
+<a class="text-[#adaaaa] hover:text-white transition-colors uppercase text-xs font-bold" href="#portfolio">Portfolio</a>
+<a class="text-[#adaaaa] hover:text-white transition-colors uppercase text-xs font-bold" href="#team">Team</a>
+<a class="text-[#adaaaa] hover:text-white transition-colors uppercase text-xs font-bold" href="#pricing">Pricing</a>
 </div>
-<div class="flex flex-col">
-<h2 class="text-gray-900 dark:text-white text-base sm:text-lg font-bold leading-tight tracking-[-0.015em]">Kachehub</h2>
-<span class="text-xs text-gray-600 dark:text-gray-400 font-medium">Giving tech solutions</span>
-</div>
-</div>
-<div class="hidden lg:flex flex-1 justify-end gap-6 xl:gap-8">
-<div class="flex items-center gap-6 xl:gap-9">
-<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors" href="#home">Home</a>
-<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors" href="#brief">Start Project</a>
-<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors" href="#services">Services</a>
-<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors" href="#portfolio">Portfolio</a>
-<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors" href="#about">About Us</a>
-<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors" href="#team">Team</a>
-<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors" href="#contact">Contact</a>
-</div>
-<a href="#brief" data-track="nav_primary_cta" class="hidden xl:flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
-<span class="truncate">Request Proposal</span>
-</a>
-</div>
-<div class="lg:hidden">
-<button id="mobile-menu-button" class="text-gray-900 dark:text-white p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition-colors">
+<div class="flex items-center gap-3">
+<a class="hidden md:inline-flex shrink-0 bg-[#00FF88] text-[#00391c] px-4 sm:px-6 py-2 rounded-sm font-['Space_Grotesk'] font-bold text-xs sm:text-sm transition-transform scale-95 active:scale-90 shadow-[0_0_20px_rgba(0,255,136,0.2)]" href="#contact">Contact</a>
+<button aria-controls="mobileMenu" aria-expanded="false" aria-label="Open menu" class="md:hidden inline-flex items-center justify-center w-11 h-11 border border-[#494847]/30 rounded-sm text-white hover:bg-white/5 transition-colors" id="mobileMenuButton" type="button">
 <span class="material-symbols-outlined">menu</span>
 </button>
 </div>
-
-<!-- Mobile Menu Overlay -->
-<div id="mobile-menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden hidden"></div>
-
-<!-- Mobile Menu -->
-<div id="mobile-menu" class="mobile-menu fixed top-0 left-0 h-full w-80 bg-white dark:bg-[#101c22] opacity-100 z-50 lg:hidden shadow-2xl">
-<div class="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-[#101c22]">
-<div class="flex items-center gap-3 text-gray-900 dark:text-white">
-<div class="size-8">
-<img src="uploads/logo6.png" alt="Kachehub Logo" class="w-full h-full object-contain rounded-full"/>
 </div>
-<div class="flex flex-col">
-<h2 class="text-gray-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Kachehub</h2>
-<span class="text-xs text-gray-600 dark:text-gray-400 font-medium">Giving tech solutions</span>
+<div class="hidden md:hidden border-t border-[#494847]/15 bg-[#0e0e0e]/95" id="mobileMenu">
+<div class="px-4 py-4 flex flex-col gap-4 font-['Space_Grotesk']">
+<a class="text-[#eeeeee] uppercase text-xs font-bold tracking-[0.2em]" href="#services">Services</a>
+<a class="text-[#eeeeee] uppercase text-xs font-bold tracking-[0.2em]" href="#why-us">Why Us</a>
+<a class="text-[#eeeeee] uppercase text-xs font-bold tracking-[0.2em]" href="#portfolio">Portfolio</a>
+<a class="text-[#eeeeee] uppercase text-xs font-bold tracking-[0.2em]" href="#team">Team</a>
+<a class="text-[#eeeeee] uppercase text-xs font-bold tracking-[0.2em]" href="#pricing">Pricing</a>
+<a class="text-[#00391c] bg-[#00FF88] px-4 py-3 rounded-sm uppercase text-xs font-bold tracking-[0.2em] text-center" href="#contact">Contact</a>
 </div>
-</div>
-<button id="mobile-menu-close" class="text-gray-900 dark:text-white p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition-colors">
-<span class="material-symbols-outlined">close</span>
-</button>
-</div>
-<nav class="p-4 bg-white dark:bg-[#101c22]">
-<div class="space-y-4">
-<a class="block text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-base font-medium leading-normal py-2 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" href="#home">Home</a>
-<a class="block text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-base font-medium leading-normal py-2 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" href="#brief">Start Project</a>
-<a class="block text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-base font-medium leading-normal py-2 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" href="#services">Services</a>
-<a class="block text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-base font-medium leading-normal py-2 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" href="#portfolio">Portfolio</a>
-<a class="block text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-base font-medium leading-normal py-2 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" href="#about">About Us</a>
-<a class="block text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-base font-medium leading-normal py-2 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" href="#team">Team</a>
-<a class="block text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-base font-medium leading-normal py-2 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" href="#contact">Contact</a>
-</div>
-<div class="mt-6 pt-4 border-t border-gray-200 dark:border-gray-700">
-<a href="#brief" data-track="mobile_nav_primary_cta" class="w-full flex items-center justify-center overflow-hidden rounded-lg h-12 px-4 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
-<span class="truncate">Request Proposal</span>
-</a>
 </div>
 </nav>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center justify-center pt-24 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute top-1/4 -left-24 sm:-left-20 w-72 sm:w-96 h-72 sm:h-96 bg-primary/10 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-1/4 -right-24 sm:-right-20 w-72 sm:w-96 h-72 sm:h-96 bg-primary/5 rounded-full blur-[120px]"></div>
+<img alt="Digital Tech" class="w-full h-full object-cover opacity-20 mix-blend-overlay" data-alt="abstract high-tech digital background with glowing green nodes, circuit lines, and deep black cyber environment style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbT17XUgEe9WagOao3l4bamcWieXBbVpFmp85s8T02jg885UoT9UirV0rUB7PltrfFB0hFqzz2DKbCW6K9byH1vjhd79CBdoZJxw7V9rUZ8uS4anYbJnyEgK9yEfDDLv830xmnoj_Q3e29R4kWGAoWxIzjRFH3WqrYLRcmWhZ23HY0upDoiYiIurTn3_xBGCQh_NbZCE_aIuKFH_SKQn6hKtuQmJk2MBldWeUd_JHoVmMUKgi7lMV-wHY1rOOOEYCjYmgnc0stoLFu"/>
 </div>
-</header>
-<main class="flex-1 pt-16 sm:pt-20 w-full">
-<section id="home" class="w-full">
-<div class="w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
-<div class="w-full max-w-7xl mx-auto">
-<div class="relative flex min-h-[400px] sm:min-h-[500px] md:min-h-[600px] lg:min-h-[700px] flex-col gap-4 sm:gap-6 md:gap-8 rounded-none sm:rounded-xl items-center justify-center p-6 sm:p-8 md:p-12 lg:p-16 overflow-hidden premium-card">
-<div id="hero-bg" class="absolute inset-0 bg-cover bg-center bg-no-repeat hero-bg-motion"></div>
-<div class="hero-glow a"></div>
-<div class="hero-glow b"></div>
-<div class="absolute inset-0 bg-gradient-to-b from-[rgba(16,28,34,0.70)] to-[rgba(16,28,34,0.90)]"></div>
-<div class="relative z-10 flex flex-col items-center">
-<span class="inline-flex items-center rounded-full border border-white/30 bg-white/10 backdrop-blur px-4 py-1 text-xs sm:text-sm font-semibold text-white mb-4">Custom Business Systems in 2-6 Weeks</span>
-<div class="flex flex-col gap-3 sm:gap-4 text-center px-2">
-<h1 class="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black leading-tight tracking-[-0.033em]">
-We Build Systems That Help Businesses Grow and Manage Better
-</h1>
-<h2 class="text-gray-300 text-sm sm:text-base lg:text-lg font-normal leading-normal max-w-xs sm:max-w-lg lg:max-w-2xl xl:max-w-3xl mx-auto px-2">
-From sales and operations to customer service, we design software that improves daily workflows, supports smarter decisions, and drives measurable growth.
-</h2>
-</div>
-<div class="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full max-w-sm sm:max-w-md md:max-w-lg">
-<a href="#brief" data-track="hero_primary_cta" class="w-full sm:w-auto flex min-w-[160px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 sm:h-14 px-6 sm:px-8 bg-primary text-white text-sm sm:text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
-<span class="truncate">Get 15-min Growth Audit</span>
-</a>
-<a href="#portfolio" data-track="hero_secondary_cta" class="w-full sm:w-auto flex min-w-[160px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 sm:h-14 px-6 sm:px-8 bg-transparent border-2 border-white text-white text-sm sm:text-base font-bold leading-normal tracking-[0.015em] hover:bg-white hover:text-gray-900 transition-colors">
-<span class="truncate">See Proven Results</span>
-</a>
-</div>
-<div class="mt-7 grid grid-cols-3 gap-2 sm:gap-4 text-white/95 w-full max-w-xl">
-<div class="rounded-lg border border-white/20 bg-white/10 px-3 py-2 text-center">
-<p class="text-lg sm:text-2xl font-black">50+</p>
-<p class="text-[11px] sm:text-xs text-gray-200">Projects Delivered</p>
-</div>
-<div class="rounded-lg border border-white/20 bg-white/10 px-3 py-2 text-center">
-<p class="text-lg sm:text-2xl font-black">98%</p>
-<p class="text-[11px] sm:text-xs text-gray-200">Client Satisfaction</p>
-</div>
-<div class="rounded-lg border border-white/20 bg-white/10 px-3 py-2 text-center">
-<p class="text-lg sm:text-2xl font-black">24/7</p>
-<p class="text-[11px] sm:text-xs text-gray-200">Technical Support</p>
+<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<h1 class="font-headline text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight leading-tight mb-6 sm:mb-8">
+                We Build <span class="text-[#00FF88]">Powerful</span> Digital Systems That <span class="italic font-light opacity-80">Transform</span> Your Business
+            </h1>
+<p class="max-w-2xl mx-auto text-on-surface-variant text-base sm:text-lg md:text-xl mb-10 sm:mb-12 uppercase tracking-[0.2em] sm:tracking-widest">
+                Engineered for speed, scalability, and security. We build the future of your enterprise.
+            </p>
+<div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+<a class="w-full sm:w-auto inline-flex items-center justify-center px-10 py-5 bg-[#00FF88] text-[#00391c] rounded-sm font-bold text-lg hover:shadow-[0_0_30px_rgba(0,255,136,0.4)] transition-all duration-500 uppercase tracking-tighter text-center" href="#contact">
+                    Start Your Project
+                </a>
+<a class="w-full sm:w-auto inline-flex px-10 py-5 rounded-sm border border-primary/30 font-bold text-lg items-center justify-center gap-3 hover:bg-primary/10 transition-all duration-500 uppercase tracking-tighter" href="https://wa.me/255689178891?text=Hello%20Kachehub%2C%20I%20would%20like%20to%20discuss%20a%20project." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined">chat</span>
+                    WhatsApp Us
+                </a>
 </div>
 </div>
+</section>
+<!-- Stats Section -->
+<section class="py-20 bg-surface-container-low border-y border-[#494847]/15">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-12 text-center">
+<div>
+<div class="text-3xl sm:text-4xl md:text-5xl font-black font-space text-primary mb-2">20+</div>
+<div class="text-[10px] uppercase tracking-[0.2em] text-slate-500 font-bold">Projects Completed</div>
+</div>
+<div>
+<div class="text-3xl sm:text-4xl md:text-5xl font-black font-space text-primary mb-2">98%</div>
+<div class="text-[10px] uppercase tracking-[0.2em] text-slate-500 font-bold">Happy Clients</div>
+</div>
+<div>
+<div class="text-3xl sm:text-4xl md:text-5xl font-black font-space text-primary mb-2">5+</div>
+<div class="text-[10px] uppercase tracking-[0.2em] text-slate-500 font-bold">Systems Deployed</div>
+</div>
+<div>
+<div class="text-3xl sm:text-4xl md:text-5xl font-black font-space text-primary mb-2">5+</div>
+<div class="text-[10px] uppercase tracking-[0.2em] text-slate-500 font-bold">Years Experience</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-32 relative" id="services">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="mb-20">
+<h2 class="font-headline text-3xl sm:text-4xl font-bold mb-4 uppercase tracking-tighter">Our Core <span class="text-primary">Services</span></h2>
+<div class="w-24 h-[2px] bg-primary"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Website Development -->
+<div class="glass p-10 rounded-sm border border-[#494847]/15 neon-border-hover transition-all duration-500 group">
+<div class="w-16 h-16 bg-primary/10 border border-primary/20 rounded-sm flex items-center justify-center mb-8 group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-4xl text-primary" data-weight="fill">desktop_windows</span>
+</div>
+<h3 class="text-2xl font-bold mb-4 uppercase tracking-tighter">Website Development</h3>
+<p class="text-on-surface-variant leading-relaxed text-sm">
+                        Responsive, high-performance landing pages and corporate websites that convert visitors into loyal customers.
+                    </p>
+</div>
+<!-- Web Systems -->
+<div class="glass p-10 rounded-sm border border-[#494847]/15 neon-border-hover transition-all duration-500 group">
+<div class="w-16 h-16 bg-primary/10 border border-primary/20 rounded-sm flex items-center justify-center mb-8 group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-4xl text-primary" data-weight="fill">developer_board</span>
+</div>
+<h3 class="text-2xl font-bold mb-4 uppercase tracking-tighter">Web Systems</h3>
+<p class="text-on-surface-variant leading-relaxed text-sm">
+                        Complex ERP, CRM, and management systems tailored to automate your business workflows and increase efficiency.
+                    </p>
+</div>
+<!-- Mobile Apps -->
+<div class="glass p-10 rounded-sm border border-[#494847]/15 neon-border-hover transition-all duration-500 group">
+<div class="w-16 h-16 bg-primary/10 border border-primary/20 rounded-sm flex items-center justify-center mb-8 group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-4xl text-primary" data-weight="fill">phone_iphone</span>
+</div>
+<h3 class="text-2xl font-bold mb-4 uppercase tracking-tighter">Mobile Apps</h3>
+<p class="text-on-surface-variant leading-relaxed text-sm">
+                        Intuitive iOS and Android applications with seamless performance and premium user experience design.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Us Section (Bento Grid Style) -->
+<section class="py-32 bg-surface-container-lowest" id="why-us">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="font-headline text-3xl sm:text-4xl font-bold mb-12 sm:mb-16 text-center uppercase tracking-tighter">Why Choose <span class="text-primary">KACHEHUB</span></h2>
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4">
+<div class="md:col-span-2 bg-surface-container p-8 rounded-sm flex flex-col justify-end min-h-[300px] border border-[#494847]/15 hover:border-primary/30 transition-colors">
+<span class="material-symbols-outlined text-primary text-5xl mb-6">palette</span>
+<h3 class="text-2xl font-bold mb-2 uppercase tracking-tighter">Modern UI/UX</h3>
+<p class="text-on-surface-variant text-sm">We design experiences that feel premium, intuitive, and modern.</p>
+</div>
+<div class="bg-surface-container p-8 rounded-sm border border-[#494847]/15 hover:border-primary/30 transition-colors">
+<span class="material-symbols-outlined text-primary text-5xl mb-6">trending_up</span>
+<h4 class="text-xl font-bold mb-2 uppercase tracking-tighter">Scalability</h4>
+<p class="text-on-surface-variant text-xs">Built to grow with your user base.</p>
+</div>
+<div class="bg-surface-container p-8 rounded-sm border border-[#494847]/15 hover:border-primary/30 transition-colors">
+<span class="material-symbols-outlined text-primary text-5xl mb-6">speed</span>
+<h4 class="text-xl font-bold mb-2 uppercase tracking-tighter">Fast Delivery</h4>
+<p class="text-on-surface-variant text-xs">Swift execution without compromising quality.</p>
+</div>
+<div class="bg-surface-container p-8 rounded-sm border border-[#494847]/15 hover:border-primary/30 transition-colors">
+<span class="material-symbols-outlined text-primary text-5xl mb-6">payments</span>
+<h4 class="text-xl font-bold mb-2 uppercase tracking-tighter">Pricing</h4>
+<p class="text-on-surface-variant text-xs">Transparent and competitive costs.</p>
+</div>
+<div class="bg-surface-container p-8 rounded-sm border border-[#494847]/15 hover:border-primary/30 transition-colors">
+<span class="material-symbols-outlined text-primary text-5xl mb-6">psychology</span>
+<h4 class="text-xl font-bold mb-2 uppercase tracking-tighter">Real Solutions</h4>
+<p class="text-on-surface-variant text-xs">Solving actual business pain points.</p>
+</div>
+<div class="md:col-span-2 bg-surface-container p-8 rounded-sm flex flex-col justify-end border border-[#494847]/15 hover:border-primary/30 transition-colors">
+<span class="material-symbols-outlined text-primary text-5xl mb-6">support_agent</span>
+<h3 class="text-2xl font-bold mb-2 uppercase tracking-tighter">Dedicated Support</h3>
+<p class="text-on-surface-variant text-sm">Our commitment doesn't end at deployment. We scale with you.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Portfolio Section -->
+<section class="py-32" id="portfolio">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-12 sm:mb-16">
+<div>
+<h2 class="font-headline text-3xl sm:text-4xl font-bold mb-4 uppercase tracking-tighter">Featured <span class="text-primary">Portfolio</span></h2>
+<p class="text-on-surface-variant text-xs uppercase tracking-widest">Selected works defining our engineering standards.</p>
+</div>
+<a class="hidden md:block text-primary font-bold hover:underline uppercase text-xs tracking-widest" href="#contact">View All Projects</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Logistics -->
+<div class="group relative overflow-hidden rounded-sm aspect-[4/5] bg-surface-container border border-[#494847]/15">
+<img alt="DCLC logistics management system" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="uploads/dclc.png"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent p-8 flex flex-col justify-end">
+<h4 class="text-2xl font-bold mb-1 uppercase tracking-tighter">Logistic Management</h4>
+<p class="text-primary text-xs font-space font-bold uppercase tracking-widest">DCLC</p>
+</div>
+</div>
+<!-- Pharmacy -->
+<div class="group relative overflow-hidden rounded-sm aspect-[4/5] bg-surface-container border border-[#494847]/15">
+<img alt="Pharmacy management system" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="uploads/pharmacy.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent p-8 flex flex-col justify-end">
+<h4 class="text-2xl font-bold mb-1 uppercase tracking-tighter">Pharmacy Management System</h4>
+<p class="text-primary text-xs font-space font-bold uppercase tracking-widest">PMS</p>
+</div>
+</div>
+<!-- Booking -->
+<div class="group relative overflow-hidden rounded-sm aspect-[4/5] bg-surface-container border border-[#494847]/15">
+<img alt="Booking Platform" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Professional booking and appointment mobile application UI with elegant minimalist design and dark theme" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwhTFmPbPRETDA2aQYIpIcDKzqw2GLl67T2EPNPmGU84eBmlC7XskfYn7DpkXwNAllcMGcmGrCKKhSqufEmb6sQ7U_CXV3eRtlQzLRgkvwUXbOr2IGbR0xK60rYev-Vv9R1bOXWiFdXKEpJMlg82XKGVGSJzHeGr8hlIhhRbUhyYR75Py_D2zpeZbmKa1g1HHaxGLOMi3urGiN7Be8GiMh1z4MipcR5IXE_LBWVVCYrB4FiZXrVeIIiKkphFmNFxovmN9K1JEgp9mV"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent p-8 flex flex-col justify-end">
+<h4 class="text-2xl font-bold mb-1 uppercase tracking-tighter">Booking Platform</h4>
+<p class="text-primary text-xs font-space font-bold uppercase tracking-widest">Mobile &amp; Web</p>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section class="py-8 sm:py-12 lg:py-16 w-full" id="brief">
-<div class="w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
-<div class="w-full max-w-7xl mx-auto">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-start">
-<div class="reveal-up">
-<p class="text-primary font-semibold text-sm sm:text-base">Qualified Leads Only</p>
-<h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mt-2 mb-3">Start Your Project Brief</h2>
-<p class="text-sm sm:text-base lg:text-lg text-gray-600 dark:text-gray-400 leading-relaxed">Tell us what you want to improve in your business, from sales to operations management. You will receive a clear implementation plan and quote response within 24 hours.</p>
-<ul class="mt-5 space-y-3 text-sm sm:text-base text-gray-700 dark:text-gray-300">
-<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span><span>Fixed scope and delivery milestones</span></li>
-<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span><span>Business-first system architecture</span></li>
-<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span><span>Transparent pricing and support plan</span></li>
+<!-- Pricing Section -->
+<section class="py-32 bg-surface-container-low relative" id="pricing">
+<div class="absolute top-0 right-0 w-1/3 h-1/3 bg-primary/5 blur-[150px] -z-10"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-20">
+<h2 class="font-headline text-3xl sm:text-4xl font-bold mb-4 uppercase tracking-tighter">Investment <span class="text-primary">Packages</span></h2>
+<p class="text-on-surface-variant max-w-xl mx-auto text-xs uppercase tracking-widest">Gharama nafuu + Free consultation for every business tier.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Websites -->
+<div class="bg-surface-container p-10 rounded-sm border border-[#494847]/15 flex flex-col hover:border-primary/30 transition-all">
+<div class="mb-8">
+<span class="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-500">Corporate</span>
+<h4 class="text-3xl font-bold mt-2 uppercase tracking-tighter">Websites</h4>
+</div>
+<div class="text-4xl font-black mb-8 text-primary">
+<span class="text-lg text-slate-400 font-normal">Tsh</span> 350k<span class="text-lg">+</span>
+</div>
+<ul class="space-y-4 mb-12 flex-grow text-sm">
+<li class="flex items-center gap-3 text-on-surface-variant"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Responsive Design</li>
+<li class="flex items-center gap-3 text-on-surface-variant"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> SEO Optimization</li>
+<li class="flex items-center gap-3 text-on-surface-variant"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Fast Loading</li>
 </ul>
+<a class="w-full py-4 rounded-sm bg-surface-container-highest border border-[#494847]/30 font-bold hover:bg-primary/10 hover:border-primary/50 transition-all uppercase text-xs tracking-widest text-center flex items-center justify-center" data-service-link="Website Development" href="#contact">Select Package</a>
 </div>
-<div class="bg-white dark:bg-[#233c48] rounded-xl shadow-lg p-5 sm:p-6 lg:p-8 premium-card reveal-up">
-<form id="briefForm" class="space-y-4">
+<!-- Systems -->
+<div class="bg-surface-container-highest p-10 rounded-sm border border-primary/40 flex flex-col relative overflow-hidden ring-1 ring-primary/20 md:scale-105 shadow-[0_0_40px_rgba(0,255,136,0.1)]">
+<div class="absolute top-4 right-4 bg-primary text-on-primary px-3 py-1 rounded-sm text-[10px] font-bold uppercase tracking-widest">Popular</div>
+<div class="mb-8">
+<span class="text-[10px] font-bold uppercase tracking-[0.2em] text-primary">Enterprise</span>
+<h4 class="text-3xl font-bold mt-2 uppercase tracking-tighter">Web Systems</h4>
+</div>
+<div class="text-4xl font-black mb-8 text-primary">
+<span class="text-lg text-slate-400 font-normal">Tsh</span> 1.5M<span class="text-lg">+</span>
+</div>
+<ul class="space-y-4 mb-12 flex-grow text-sm">
+<li class="flex items-center gap-3 text-on-surface-variant"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Custom Workflows</li>
+<li class="flex items-center gap-3 text-on-surface-variant"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Data Encryption</li>
+<li class="flex items-center gap-3 text-on-surface-variant"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Cloud Integration</li>
+</ul>
+<a class="w-full py-4 rounded-sm bg-primary text-[#00391c] font-bold shadow-[0_10px_20px_rgba(0,255,136,0.2)] uppercase text-xs tracking-widest text-center flex items-center justify-center" data-service-link="Web System" href="#contact">Select Package</a>
+</div>
+<!-- Mobile Apps -->
+<div class="bg-surface-container p-10 rounded-sm border border-[#494847]/15 flex flex-col hover:border-primary/30 transition-all">
+<div class="mb-8">
+<span class="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-500">Innovation</span>
+<h4 class="text-3xl font-bold mt-2 uppercase tracking-tighter">Mobile Apps</h4>
+</div>
+<div class="text-4xl font-black mb-8 text-primary">
+<span class="text-lg text-slate-400 font-normal">Tsh</span> 3M<span class="text-lg">+</span>
+</div>
+<ul class="space-y-4 mb-12 flex-grow text-sm">
+<li class="flex items-center gap-3 text-on-surface-variant"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> iOS &amp; Android</li>
+<li class="flex items-center gap-3 text-on-surface-variant"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Push Notifications</li>
+<li class="flex items-center gap-3 text-on-surface-variant"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Premium UX</li>
+</ul>
+<a class="w-full py-4 rounded-sm bg-surface-container-highest border border-[#494847]/30 font-bold hover:bg-primary/10 hover:border-primary/50 transition-all uppercase text-xs tracking-widest text-center flex items-center justify-center" data-service-link="Mobile App" href="#contact">Select Package</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Team Section -->
+<section class="py-32 bg-surface-container-lowest" id="team">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12 sm:mb-16">
 <div>
-<label for="briefName" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Full Name *</label>
-<input type="text" id="briefName" name="briefName" required class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-[#192b33] text-gray-900 dark:text-white" placeholder="Your full name">
+<h2 class="font-headline text-3xl sm:text-4xl font-bold mb-4 uppercase tracking-tighter">Meet The <span class="text-primary">Team</span></h2>
+<p class="text-on-surface-variant text-sm uppercase tracking-[0.2em] max-w-2xl">Small, senior, and execution-focused. We pair product thinking with reliable delivery.</p>
 </div>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<p class="text-xs uppercase tracking-[0.2em] text-slate-500 max-w-sm">We stay lean on purpose so strategy, design, and development stay closely aligned.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<article class="glass p-8 rounded-sm border border-[#494847]/15 hover:border-primary/30 transition-all">
+<div class="aspect-[4/5] overflow-hidden rounded-sm border border-[#494847]/15 mb-6 bg-surface-container-highest">
+<img alt="Portrait of John Kache" class="w-full h-full object-cover" src="uploads/kache%20(1).jpg"/>
+</div>
+<h3 class="text-2xl font-bold uppercase tracking-tighter mb-2">JOHN KACHE</h3>
+<p class="text-primary text-xs uppercase tracking-[0.2em] font-bold mb-6">Founder / Systems Lead</p>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Owns solution architecture, delivery planning, and the business logic that turns complex requirements into dependable systems.</p>
+<ul class="space-y-3 text-sm text-on-surface-variant">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> ERP and CRM workflows</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Backend and integrations</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Delivery oversight</li>
+</ul>
+</article>
+<article class="glass p-8 rounded-sm border border-[#494847]/15 hover:border-primary/30 transition-all">
+<div class="aspect-[4/5] overflow-hidden rounded-sm border border-[#494847]/15 mb-6 bg-surface-container-highest">
+<img alt="Portrait of Emmanuel Charles" class="w-full h-full object-cover" src="uploads/emmanuel.jpg"/>
+</div>
+<h3 class="text-2xl font-bold uppercase tracking-tighter mb-2">EMMANUEL CHARLES</h3>
+<p class="text-primary text-xs uppercase tracking-[0.2em] font-bold mb-6">Product Designer</p>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Shapes interfaces, customer journeys, and product structure so every release feels clear, premium, and easy to use.</p>
+<ul class="space-y-3 text-sm text-on-surface-variant">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> UI systems and prototyping</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Conversion-focused UX</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Design QA</li>
+</ul>
+</article>
+<article class="glass p-8 rounded-sm border border-[#494847]/15 hover:border-primary/30 transition-all">
+<div class="aspect-[4/5] overflow-hidden rounded-sm border border-[#494847]/15 mb-6 bg-surface-container-highest">
+<img alt="Portrait of Monica Chemag" class="w-full h-full object-cover" src="uploads/monica.jpg"/>
+</div>
+<h3 class="text-2xl font-bold uppercase tracking-tighter mb-2">MONICA CHEMAG</h3>
+<p class="text-primary text-xs uppercase tracking-[0.2em] font-bold mb-6">Frontend Engineer</p>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Builds polished, responsive interfaces with a strong focus on speed, accessibility, and clean implementation details.</p>
+<ul class="space-y-3 text-sm text-on-surface-variant">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Responsive web interfaces</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Performance tuning</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Launch-ready QA</li>
+</ul>
+</article>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-32">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="font-headline text-3xl sm:text-4xl font-bold mb-12 sm:mb-16 text-center uppercase tracking-tighter">Trusted by <span class="text-primary">Leaders</span></h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="glass p-10 rounded-sm border border-[#494847]/15 relative hover:border-primary/30 transition-all">
+<span class="material-symbols-outlined text-primary/10 text-8xl absolute top-4 right-8">format_quote</span>
+<p class="text-lg italic mb-8 relative z-10 leading-relaxed font-light">
+                        "KACHEHUB delivered our POS system ahead of schedule. The interface is intuitive, and the performance is incredible. It has completely transformed our operations."
+                    </p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-sm bg-slate-800 overflow-hidden border border-[#494847]/30">
+<img alt="Client" class="w-full h-full object-cover grayscale" data-alt="portrait of a confident business executive with a friendly expression in a modern professional setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJBBJUmJe1YP1eit20_qk_OOTP2w8jYjYFZMOJ88AMQ24CbNskPhYGiULw-5bhpZP6IUN6GmF7HO0weaeJcz98YinSQCdFivwkrCiGyIM8hBTxYkWzw3UtH_VsYkI9CwvzQJ-f9zqDAypBHXufXESh41c2GT2Oyn8DEdEzTvcmHPfMZEFjmd0G4e25HhuLSr99t8csd6zza7sXNykD_8ZXn9mWMhm0ErFAXHvW4GkSzjVGe8ZXBsSJ1nelQD3Et7Vg2T70_C1U-aO6"/>
+</div>
 <div>
-<label for="briefBusiness" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Business Name *</label>
-<input type="text" id="briefBusiness" name="briefBusiness" required class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-[#192b33] text-gray-900 dark:text-white" placeholder="Company name">
+<div class="font-bold uppercase tracking-tighter">John M.</div>
+<div class="text-[10px] text-slate-500 uppercase tracking-widest font-bold">CEO, Global Logistics</div>
+</div>
+</div>
+</div>
+<div class="glass p-10 rounded-sm border border-[#494847]/15 relative hover:border-primary/30 transition-all">
+<span class="material-symbols-outlined text-primary/10 text-8xl absolute top-4 right-8">format_quote</span>
+<p class="text-lg italic mb-8 relative z-10 leading-relaxed font-light">
+                        "The mobile app developed by KACHEHUB exceeded all our expectations. The attention to detail in UI/UX is something we haven't seen in other agencies."
+                    </p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-sm bg-slate-800 overflow-hidden border border-[#494847]/30">
+<img alt="Client" class="w-full h-full object-cover grayscale" data-alt="portrait of a professional woman with a bright and trustworthy expression in a clean studio environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZofhqc-txwzsP9gWkYiVSJ_nCFLTqTarFrUSxzrn5C85DyBQn0bxy484Kch3_ly7UbyUXDJDgQ9ExykRHnt-ybxLfMD-iQ47e-1AhdrFhSIWChJ-c-OTWztfOuMwsMBMzfCm7K7Zcmts1ajLFSJs8xyz_QqhW2kQeets07wvr_knIyVtQ5fNaVSRUof5Cxl9TT034HRhSTIBXXzNSTcmMefPsstKbn156vZ1gCBATVXRhVH96OtjvApGNHwFOAgdI1rpXqZuDoT1k"/>
 </div>
 <div>
-<label for="briefEmail" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Email *</label>
-<input type="email" id="briefEmail" name="briefEmail" required class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-[#192b33] text-gray-900 dark:text-white" placeholder="name@company.com">
+<div class="font-bold uppercase tracking-tighter">Sarah K.</div>
+<div class="text-[10px] text-slate-500 uppercase tracking-widest font-bold">Marketing Director, FinTech</div>
 </div>
 </div>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+<div class="max-w-7xl mx-auto bg-surface-container rounded-sm p-12 md:p-24 text-center border border-[#494847]/20 relative">
+<div class="absolute inset-0 bg-primary/5 blur-[100px] -z-10"></div>
+<h2 class="font-headline text-3xl sm:text-4xl md:text-6xl font-black mb-8 uppercase tracking-tighter">Scale Your Business <span class="text-primary">Now</span></h2>
+<div class="flex flex-col sm:flex-row gap-6 justify-center">
+<a class="w-full sm:w-auto inline-flex items-center justify-center px-8 sm:px-12 py-5 bg-primary text-[#00391c] font-bold rounded-sm text-lg sm:text-xl hover:shadow-[0_0_30px_rgba(0,255,136,0.4)] transition-all uppercase tracking-tighter" href="#contact">Launch Project</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center px-8 sm:px-12 py-5 border border-[#494847]/30 font-bold rounded-sm text-lg sm:text-xl hover:bg-primary/10 hover:border-primary/50 transition-all uppercase tracking-tighter" href="https://wa.me/255689178891?text=Hello%20Kachehub%2C%20I%20want%20to%20learn%20more%20about%20your%20services." rel="noopener noreferrer" target="_blank">Contact Us</a>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-32" id="contact">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20">
 <div>
-<label for="briefBudget" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Budget Range *</label>
-<select id="briefBudget" name="briefBudget" required class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-[#192b33] text-gray-900 dark:text-white">
-<option value="">Select budget</option>
-<option value="$1,000 - $3,000">$1,000 - $3,000</option>
-<option value="$3,000 - $10,000">$3,000 - $10,000</option>
-<option value="$10,000 - $25,000">$10,000 - $25,000</option>
-<option value="$25,000+">$25,000+</option>
+<h2 class="font-headline text-3xl sm:text-4xl font-bold mb-8 uppercase tracking-tighter">Get In <span class="text-primary">Touch</span></h2>
+<p class="text-on-surface-variant mb-12 text-sm uppercase tracking-widest leading-loose">Have a vision? We have the expertise to build it. Reach out for a consultation today.</p>
+<div class="space-y-8">
+<div class="flex items-center gap-6 group">
+<div class="w-14 h-14 bg-surface-container rounded-sm flex items-center justify-center border border-[#494847]/15 group-hover:border-primary/50 transition-all">
+<span class="material-symbols-outlined text-primary">phone</span>
+</div>
+<div>
+<div class="text-slate-500 text-[10px] uppercase font-bold tracking-widest">Call Us</div>
+<a class="text-xl font-bold font-space hover:text-primary transition-colors" href="tel:+255689178891">0689178891</a>
+</div>
+</div>
+<div class="flex items-center gap-6 group">
+<div class="w-14 h-14 bg-surface-container rounded-sm flex items-center justify-center border border-[#494847]/15 group-hover:border-primary/50 transition-all">
+<span class="material-symbols-outlined text-primary">mail</span>
+</div>
+<div>
+<div class="text-slate-500 text-[10px] uppercase font-bold tracking-widest">Email Us</div>
+<a class="text-xl font-bold font-space hover:text-primary transition-colors" href="mailto:hello@kachehub.com">hello@kachehub.com</a>
+</div>
+</div>
+</div>
+</div>
+<div class="glass p-10 rounded-sm border border-[#494847]/15 shadow-2xl">
+<form class="space-y-6" id="contactForm">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-[10px] font-bold uppercase tracking-widest text-slate-500" for="name">Name</label>
+<input class="w-full bg-surface-container-lowest border border-[#494847]/30 rounded-sm focus:ring-1 focus:ring-primary focus:border-primary p-4 text-sm" id="name" name="name" placeholder="Your Name" required="" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-[10px] font-bold uppercase tracking-widest text-slate-500" for="email">Email</label>
+<input class="w-full bg-surface-container-lowest border border-[#494847]/30 rounded-sm focus:ring-1 focus:ring-primary focus:border-primary p-4 text-sm" id="email" name="email" placeholder="your@email.com" required="" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-[10px] font-bold uppercase tracking-widest text-slate-500" for="service">Service</label>
+<select class="w-full bg-surface-container-lowest border border-[#494847]/30 rounded-sm focus:ring-1 focus:ring-primary focus:border-primary p-4 text-sm" id="service" name="service">
+<option>Website Development</option>
+<option>Web System</option>
+<option>Mobile App</option>
 </select>
 </div>
-<div>
-<label for="briefTimeline" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Timeline *</label>
-<select id="briefTimeline" name="briefTimeline" required class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-[#192b33] text-gray-900 dark:text-white">
-<option value="">Select timeline</option>
-<option value="Immediately (within 2 weeks)">Immediately (within 2 weeks)</option>
-<option value="This month">This month</option>
-<option value="Next 1-3 months">Next 1-3 months</option>
-<option value="Research phase">Research phase</option>
-</select>
+<div class="space-y-2">
+<label class="text-[10px] font-bold uppercase tracking-widest text-slate-500" for="message">Message</label>
+<textarea class="w-full bg-surface-container-lowest border border-[#494847]/30 rounded-sm focus:ring-1 focus:ring-primary focus:border-primary p-4 h-32 text-sm" id="message" name="message" placeholder="Tell us about your project" required=""></textarea>
 </div>
-</div>
-<div>
-<label for="briefGoal" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Project Goal *</label>
-<textarea id="briefGoal" name="briefGoal" rows="4" required class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-[#192b33] text-gray-900 dark:text-white" placeholder="What should improve in your business (sales, operations, customer service, reporting)?"></textarea>
-</div>
-<div class="flex flex-col sm:flex-row gap-3">
-<button type="submit" data-track="brief_submit_cta" class="flex-1 px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors">Request Proposal</button>
-<a href="https://wa.me/255689178891?text=Hello%20Kachehub,%20I%20need%20a%20system%20development%20proposal." data-track="brief_whatsapp_cta" target="_blank" rel="noopener noreferrer" class="flex-1 px-6 py-3 border border-primary text-primary dark:text-white font-semibold rounded-lg text-center hover:bg-primary hover:text-white transition-colors">Chat on WhatsApp</a>
-</div>
-<p class="text-xs text-gray-500 dark:text-gray-400">By submitting, you agree to be contacted about your project request.</p>
+<button class="w-full py-5 bg-primary text-[#00391c] font-black rounded-sm shadow-lg hover:scale-[1.02] transition-transform uppercase text-xs tracking-widest" type="submit">Send Message</button>
 </form>
 </div>
 </div>
-</div>
-</div>
 </section>
-<section class="py-8 sm:py-12 lg:py-16 w-full" id="services">
-<div class="w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
-<div class="w-full max-w-7xl mx-auto">
-<div class="text-center mb-8 sm:mb-10 lg:mb-12">
-<h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-2 sm:mb-3">Our Services</h2>
-<p class="text-sm sm:text-base lg:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Solutions designed to increase revenue, reduce manual work, and improve business control</p>
-</div>
-<div id="services-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 sm:gap-6 lg:gap-8">
-<div class="flex flex-1 gap-3 sm:gap-4 rounded-xl border border-gray-200 dark:border-[#325567] bg-background-light dark:bg-[#192b33] p-4 sm:p-6 flex-col items-start text-left hover:shadow-lg transition-shadow duration-300">
-<div class="text-primary">
-<span class="material-symbols-outlined !text-3xl sm:!text-4xl">code</span>
-</div>
-<div class="flex flex-col gap-1 sm:gap-2">
-<h2 class="text-gray-900 dark:text-white text-base sm:text-lg font-bold leading-tight">Web Development</h2>
-<p class="text-gray-600 dark:text-[#92b7c9] text-xs sm:text-sm font-normal leading-normal">We build business web platforms that streamline processes, capture more leads, and help teams manage operations in one place.</p>
-</div>
-</div>
-<div class="flex flex-1 gap-3 sm:gap-4 rounded-xl border border-gray-200 dark:border-[#325567] bg-background-light dark:bg-[#192b33] p-4 sm:p-6 flex-col items-start text-left hover:shadow-lg transition-shadow duration-300">
-<div class="text-primary">
-<span class="material-symbols-outlined !text-3xl sm:!text-4xl">phone_iphone</span>
-</div>
-<div class="flex flex-col gap-1 sm:gap-2">
-<h2 class="text-gray-900 dark:text-white text-base sm:text-lg font-bold leading-tight">Mobile App Development</h2>
-<p class="text-gray-600 dark:text-[#92b7c9] text-xs sm:text-sm font-normal leading-normal">We create mobile apps that keep your team and customers connected, speed up service delivery, and unlock new sales channels.</p>
-</div>
-</div>
-<div class="flex flex-1 gap-3 sm:gap-4 rounded-xl border border-gray-200 dark:border-[#325567] bg-background-light dark:bg-[#192b33] p-4 sm:p-6 flex-col items-start text-left hover:shadow-lg transition-shadow duration-300">
-<div class="text-primary">
-<span class="material-symbols-outlined !text-3xl sm:!text-4xl">design_services</span>
-</div>
-<div class="flex flex-col gap-1 sm:gap-2">
-<h2 class="text-gray-900 dark:text-white text-base sm:text-lg font-bold leading-tight">UI/UX Design</h2>
-<p class="text-gray-600 dark:text-[#92b7c9] text-xs sm:text-sm font-normal leading-normal">We design clear user experiences that improve customer conversion, reduce confusion, and make your systems easier to manage.</p>
-</div>
-</div>
-<div class="flex flex-1 gap-3 sm:gap-4 rounded-xl border border-gray-200 dark:border-[#325567] bg-background-light dark:bg-[#192b33] p-4 sm:p-6 flex-col items-start text-left hover:shadow-lg transition-shadow duration-300">
-<div class="text-primary">
-<span class="material-symbols-outlined !text-3xl sm:!text-4xl">cloud</span>
-</div>
-<div class="flex flex-col gap-1 sm:gap-2">
-<h2 class="text-gray-900 dark:text-white text-base sm:text-lg font-bold leading-tight">Cloud Solutions</h2>
-<p class="text-gray-600 dark:text-[#92b7c9] text-xs sm:text-sm font-normal leading-normal">We move your business to secure cloud infrastructure so you can scale faster, cut downtime, and access data anytime.</p>
-</div>
-</div>
-<div class="flex flex-1 gap-3 sm:gap-4 rounded-xl border border-gray-200 dark:border-[#325567] bg-background-light dark:bg-[#192b33] p-4 sm:p-6 flex-col items-start text-left hover:shadow-lg transition-shadow duration-300">
-<div class="text-primary">
-<span class="material-symbols-outlined !text-3xl sm:!text-4xl">support_agent</span>
-</div>
-<div class="flex flex-col gap-1 sm:gap-2">
-<h2 class="text-gray-900 dark:text-white text-base sm:text-lg font-bold leading-tight">IT Support</h2>
-<p class="text-gray-600 dark:text-[#92b7c9] text-xs sm:text-sm font-normal leading-normal">We provide reliable support that keeps your systems running, protects productivity, and helps your team focus on growth.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="py-8 sm:py-12 lg:py-16 bg-gray-100 dark:bg-[#192b33] w-full" id="portfolio">
-<div class="w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
-<div class="w-full max-w-7xl mx-auto">
-<div class="text-center mb-8 sm:mb-10 lg:mb-12">
-<h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-2 sm:mb-3">Case Studies</h2>
-<p class="text-sm sm:text-base lg:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Real business outcomes from systems delivered by Kachehub</p>
-</div>
-<div id="portfolio-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
-<div class="rounded-lg overflow-hidden group shadow-md hover:shadow-xl transition-shadow duration-300">
-<img alt="Retail ERP Case Study" class="w-full h-48 sm:h-56 lg:h-60 object-cover transform group-hover:scale-105 transition-transform duration-300" src="uploads/logo1.jpg"/>
-<div class="p-3 sm:p-4 bg-background-light dark:bg-background-dark">
-<h3 class="text-base sm:text-lg font-bold text-gray-900 dark:text-white mb-1">Retail ERP Modernization</h3>
-<p class="text-xs sm:text-sm text-gray-600 dark:text-gray-400 mb-2">Inventory + billing + role-based dashboard</p>
-<p class="text-xs sm:text-sm text-primary font-semibold">Result: 37% faster operations in 90 days</p>
-</div>
-</div>
-<div class="rounded-lg overflow-hidden group shadow-md hover:shadow-xl transition-shadow duration-300">
-<img alt="Service Booking Platform Case Study" class="w-full h-48 sm:h-56 lg:h-60 object-cover transform group-hover:scale-105 transition-transform duration-300" src="uploads/logo2.jpg"/>
-<div class="p-3 sm:p-4 bg-background-light dark:bg-background-dark">
-<h3 class="text-base sm:text-lg font-bold text-gray-900 dark:text-white mb-1">Service Booking Platform</h3>
-<p class="text-xs sm:text-sm text-gray-600 dark:text-gray-400 mb-2">Web app + mobile experience + payment integration</p>
-<p class="text-xs sm:text-sm text-primary font-semibold">Result: 2.4x increase in monthly bookings</p>
-</div>
-</div>
-<div class="rounded-lg overflow-hidden group shadow-md hover:shadow-xl transition-shadow duration-300">
-<img alt="Operations Analytics Dashboard Case Study" class="w-full h-48 sm:h-56 lg:h-60 object-cover transform group-hover:scale-105 transition-transform duration-300" src="uploads/showroom.jpeg"/>
-<div class="p-3 sm:p-4 bg-background-light dark:bg-background-dark">
-<h3 class="text-base sm:text-lg font-bold text-gray-900 dark:text-white mb-1">Operations Analytics Dashboard</h3>
-<p class="text-xs sm:text-sm text-gray-600 dark:text-gray-400 mb-2">Executive insights with live KPI tracking</p>
-<p class="text-xs sm:text-sm text-primary font-semibold">Result: Reporting time cut from days to minutes</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="py-8 sm:py-12 lg:py-16 w-full" id="testimonials">
-<div class="w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
-<div class="w-full max-w-7xl mx-auto">
-<div class="text-center mb-8 sm:mb-10 lg:mb-12">
-<h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-2 sm:mb-3">Client Testimonials</h2>
-<p class="text-sm sm:text-base lg:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">What our clients are saying</p>
-</div>
-<div class="relative">
-<div id="testimonials-container" class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar gap-4 sm:gap-6 pb-4">
-<div class="flex-shrink-0 w-80 sm:w-96 snap-center">
-<div class="bg-white dark:bg-[#192b33] rounded-lg shadow-lg p-4 sm:p-6 h-full">
-<p class="text-gray-600 dark:text-gray-300 mb-4 text-sm sm:text-base leading-relaxed">"Kachehub delivered an outstanding product that exceeded our expectations. Their team is professional, skilled, and incredibly responsive."</p>
-<div class="flex items-center">
-<img alt="Client 1" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full mr-3 sm:mr-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2Ce9jn-g2n81khs1FIpM11AcW4KpI-8vXK3MXq7lg_ziHO2F4FbX6pSiq5TuvFuw2VEdAHuIFMoZciHyDVnUrdY2lZtNZWFQjU4Bts9N2X9Uo5MDilTg_lmmTiSVAa64aOV4hFKWFqQf72CH4R6n4bTBAQpxIOVNDH_A4AYFSyCdMWAQABQqsV2-DpYxiVlhcrve_dbVG2tMucQwynplnqaGJTelVDmcPSducG3AIq2blVM8uJ7I4LwPYYCAlxABURUhfJNHXljo"/>
-<div>
-<p class="font-bold text-gray-900 dark:text-white text-sm sm:text-base">Samson kijazi</p>
-<p class="text-xs sm:text-sm text-gray-500 dark:text-gray-400">CEO, showroom</p>
-</div>
-</div>
-</div>
-</div>
-<div class="flex-shrink-0 w-80 sm:w-96 snap-center">
-<div class="bg-white dark:bg-[#192b33] rounded-lg shadow-lg p-4 sm:p-6 h-full">
-<p class="text-gray-600 dark:text-gray-300 mb-4 text-sm sm:text-base leading-relaxed">"Working with kachehub was a game-changer for our business. Their expertise in mobile app development is second to none."</p>
-<div class="flex items-center">
-<img alt="Client 2" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full mr-3 sm:mr-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBK0Qr1azr77kUQqwrYAPA-SV2fVheV7MqCXi74j7cIhQwQm-pwI-yXcNFTG4hNvQF_64SFFlAnNrVU6sTLn7SVC_wKo0JC9p6iBGiNm9jAjdYcskEKJQPl57hFtYf2KGU3tg_uWLlBuzS-IYLrvaTqSNIPJnoO-5sE6mgOXw0sa9zOjfwCsdnAYhL1ySb0HmYoagHlMwZ-kmJ9dzAwQykx6oVRKRgS7b6qfc5PnuAvXzzGXa1aZ9npi9y0Sz7MswFwaWH_PUI7Vjw"/>
-<div>
-<p class="font-bold text-gray-900 dark:text-white text-sm sm:text-base">Jane methew</p>
-<p class="text-xs sm:text-sm text-gray-500 dark:text-gray-400">Founder, Innovate Inc.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="flex-shrink-0 w-80 sm:w-96 snap-center">
-<div class="bg-white dark:bg-[#192b33] rounded-lg shadow-lg p-4 sm:p-6 h-full">
-<p class="text-gray-600 dark:text-gray-300 mb-4 text-sm sm:text-base leading-relaxed">"The UI/UX design provided by kachehub completely transformed our platform. We've seen a significant increase in user engagement."</p>
-<div class="flex items-center">
-<img alt="Client 3" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full mr-3 sm:mr-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBm40RLRpiGny2wbMasF76XyjRifESGBQ4y-F0eLPcHX-C1ZMSlmNYMgbzIjW6CiqqQkvLHoPfLhfi_tHlLNDiTSO5brzUsPDYfeBsZpihZ_ePZxRg6zZwxrHhRi56MPFKh9EPS5s-9fzVRReukpcRpkX3E7YPohu-7UNZc1V-nHBo43kXYaKygxi5hv2_lc5l_ZEvcLwuR5BODGToXC7Yfh1_JXCUxVnzvi85CCWOeZFpSb-nG6xr2YJH-RaJ1EQnRRW5EsNu06Gc"/>
-<div>
-<p class="font-bold text-gray-900 dark:text-white text-sm sm:text-base">Joyce mungara</p>
-<p class="text-xs sm:text-sm text-gray-500 dark:text-gray-400">Product Manager, kismati</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="hidden sm:flex absolute top-1/2 -translate-y-1/2 left-0 right-0 justify-between px-2 pointer-events-none">
-<button class="bg-background-light dark:bg-background-dark p-2 sm:p-3 rounded-full shadow-md hover:shadow-lg transition-shadow pointer-events-auto"><span class="material-symbols-outlined text-lg sm:text-xl">arrow_back_ios_new</span></button>
-<button class="bg-background-light dark:bg-background-dark p-2 sm:p-3 rounded-full shadow-md hover:shadow-lg transition-shadow pointer-events-auto"><span class="material-symbols-outlined text-lg sm:text-xl">arrow_forward_ios</span></button>
-</div>
-</div>
-</div>
-</section>
-<section class="py-8 sm:py-12 lg:py-16 w-full" id="about">
-<div class="w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
-<div class="w-full max-w-7xl mx-auto">
-<div class="text-center mb-8 sm:mb-10 lg:mb-12">
-<h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-2 sm:mb-3">About Us</h2>
-<p class="text-sm sm:text-base lg:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">A business-focused digital partner helping companies grow, manage, and scale with confidence</p>
-</div>
-<div class="flex flex-col lg:flex-row items-center gap-6 sm:gap-8 lg:gap-12">
-<div class="lg:w-1/2 order-2 lg:order-1">
-<img alt="Our team" class="rounded-lg shadow-lg w-full h-64 sm:h-80 lg:h-96 object-cover" src="uploads/logo6.png"/>
-</div>
-<div class="lg:w-1/2 order-1 lg:order-2 space-y-4 sm:space-y-6">
-<p class="text-gray-600 dark:text-gray-400 text-sm sm:text-base lg:text-lg leading-relaxed">We are a team of developers, designers, and strategists focused on business outcomes, not just code delivery. Our work helps companies improve efficiency, strengthen decision-making, and grow sustainably.</p>
-<p class="text-gray-600 dark:text-gray-400 text-sm sm:text-base lg:text-lg leading-relaxed">We partner closely with clients to map technology to real business priorities such as revenue growth, cost control, process management, and customer retention.</p>
-</div>
-</div>
-</div>
-</section>
-<section class="py-8 sm:py-12 lg:py-16 bg-gray-100 dark:bg-[#192b33] w-full" id="team">
-<div class="w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
-<div class="w-full max-w-7xl mx-auto">
-<div class="text-center mb-8 sm:mb-10 lg:mb-12">
-<h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-2 sm:mb-3">Our Team</h2>
-<p class="text-sm sm:text-base lg:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Meet the specialists behind Kachehub's business-focused system delivery</p>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
-<article class="bg-white dark:bg-[#233c48] rounded-xl shadow-lg p-5 sm:p-6 text-center">
-<div role="img" aria-label="JOHN KACHE avatar" class="w-20 h-20 sm:w-24 sm:h-24 mx-auto rounded-full mb-4 flex items-center justify-center text-white text-xl sm:text-2xl font-bold bg-gradient-to-br from-cyan-500 to-blue-600">JK</div>
-<h3 class="text-base sm:text-lg font-bold text-gray-900 dark:text-white">JOHN KACHE</h3>
-<p class="text-primary text-sm font-semibold mt-1">CEO, System Developer &amp; Website Developer</p>
-<p class="text-gray-600 dark:text-gray-300 text-sm mt-3">Leads business strategy and delivers web and system solutions that improve operations, management, and growth.</p>
-</article>
-<article class="bg-white dark:bg-[#233c48] rounded-xl shadow-lg p-5 sm:p-6 text-center">
-<div role="img" aria-label="EMMANUEL CHARLES avatar" class="w-20 h-20 sm:w-24 sm:h-24 mx-auto rounded-full mb-4 flex items-center justify-center text-white text-xl sm:text-2xl font-bold bg-gradient-to-br from-emerald-500 to-teal-600">EC</div>
-<h3 class="text-base sm:text-lg font-bold text-gray-900 dark:text-white">EMMANUEL CHARLES</h3>
-<p class="text-primary text-sm font-semibold mt-1">Full-Stack Developer</p>
-<p class="text-gray-600 dark:text-gray-300 text-sm mt-3">Builds secure and scalable end-to-end systems that help teams work faster and support business expansion.</p>
-</article>
-<article class="bg-white dark:bg-[#233c48] rounded-xl shadow-lg p-5 sm:p-6 text-center">
-<div role="img" aria-label="MONICA ABISHUA avatar" class="w-20 h-20 sm:w-24 sm:h-24 mx-auto rounded-full mb-4 flex items-center justify-center text-white text-xl sm:text-2xl font-bold bg-gradient-to-br from-amber-500 to-orange-600">MA</div>
-<h3 class="text-base sm:text-lg font-bold text-gray-900 dark:text-white">MONICA ABISHUA</h3>
-<p class="text-primary text-sm font-semibold mt-1">System Analyst</p>
-<p class="text-gray-600 dark:text-gray-300 text-sm mt-3">Analyzes workflows and requirements to ensure each solution fits real business processes and management needs.</p>
-</article>
-</div>
-</div>
-</div>
-</section>
-<section class="py-8 sm:py-12 lg:py-16 bg-gray-100 dark:bg-[#192b33] w-full" id="contact">
-<div class="w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
-<div class="w-full max-w-7xl mx-auto">
-<div class="text-center mb-8 sm:mb-10 lg:mb-12">
-<h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-2 sm:mb-3">Contact Us</h2>
-<p class="text-sm sm:text-base lg:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Tell us your goals and we will help you plan the right system to grow and manage your business</p>
-</div>
-
-<!-- Contact Form -->
-<div class="bg-white dark:bg-[#233c48] rounded-xl shadow-lg p-6 sm:p-8 mb-8 sm:mb-12">
-<h3 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-6">Send Your Business Goals</h3>
-<form id="contactForm" class="space-y-4 sm:space-y-6">
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-<div>
-<label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Full Name *</label>
-<input type="text" id="name" name="name" required
-class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-[#192b33] text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400"
-placeholder="Your full name">
-</div>
-<div>
-<label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Email Address *</label>
-<input type="email" id="email" name="email" required
-class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-[#192b33] text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400"
-placeholder="your.email@example.com">
-</div>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-<div>
-<label for="phone" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Phone Number</label>
-<input type="tel" id="phone" name="phone"
-class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-[#192b33] text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400"
-placeholder="+255 XXX XXX XXX">
-</div>
-<div>
-<label for="subject" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Subject *</label>
-<input type="text" id="subject" name="subject" required
-class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-[#192b33] text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400"
-placeholder="Project inquiry">
-</div>
-</div>
-<div>
-<label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Message *</label>
-<textarea id="message" name="message" rows="5" required
-class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-[#192b33] text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 resize-vertical"
-placeholder="Tell us about your project and how we can help you..."></textarea>
-</div>
-<div>
-<button type="submit"
-class="w-full sm:w-auto px-8 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 focus:ring-2 focus:ring-primary focus:ring-offset-2 transition-colors">
-Send Message
-</button>
-</div>
-</form>
-</div>
-
-<!-- Newsletter Section -->
-<div class="w-full">
-<div class="flex flex-col justify-center gap-4 sm:gap-6 lg:gap-8 py-6 sm:py-10 lg:py-16 rounded-xl">
-<div class="flex flex-col gap-2 sm:gap-3 text-center">
-<h3 class="text-gray-900 dark:text-white tracking-tight text-xl sm:text-2xl lg:text-3xl font-bold leading-tight max-w-4xl mx-auto px-2">
-Stay Updated with Our Latest News and Insights
-</h3>
-</div>
-<div class="flex flex-1 justify-center">
-<form id="newsletterForm" class="flex flex-col sm:flex-row w-full max-w-md sm:max-w-lg lg:max-w-2xl gap-3 sm:gap-0">
-<input type="email" name="email" required
-class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg sm:rounded-r-none text-gray-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary border-gray-300 dark:border-[#325567] bg-white dark:bg-[#233c48] h-12 sm:h-14 lg:h-16 placeholder:text-gray-500 dark:placeholder:text-[#92b7c9] px-4 text-sm sm:text-base font-normal leading-normal" 
-placeholder="Enter your email address"/>
-<button type="submit"
-class="flex min-w-[100px] sm:min-w-[120px] cursor-pointer items-center justify-center overflow-hidden rounded-lg sm:rounded-l-none h-12 sm:h-14 lg:h-16 px-4 sm:px-6 bg-primary text-white text-sm sm:text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
-<span class="truncate">Subscribe</span>
-</button>
-</form>
-</div>
-</div>
-</div>
-</div>
-</section>
-</main>
-<footer class="border-t border-solid border-gray-200 dark:border-b-[#233c48] w-full">
-<div class="w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-6 sm:py-8">
-<div class="w-full max-w-7xl mx-auto">
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-<div class="sm:col-span-2 lg:col-span-1">
-<h3 class="font-bold text-base sm:text-lg text-gray-900 dark:text-white mb-3 sm:mb-4">Kachehub</h3>
-<p class="text-gray-600 dark:text-gray-400 text-sm sm:text-base leading-relaxed">Building software that helps businesses grow revenue, manage operations, and scale with confidence.</p>
-</div>
-<div>
-<h3 class="font-bold text-base sm:text-lg text-gray-900 dark:text-white mb-3 sm:mb-4">Contact</h3>
-<div class="space-y-1 sm:space-y-2 text-gray-600 dark:text-gray-400 text-sm sm:text-base">
-<p>Sinza A, Ubungo, Dar es salaam</p>
-<p>Email: kachehubinfo@gmail.com</p>
-<p>Phone: +255 689 178 891</p>
-</div>
-</div>
-<div>
-<h3 class="font-bold text-base sm:text-lg text-gray-900 dark:text-white mb-3 sm:mb-4">Follow Us</h3>
-<div class="flex space-x-3 sm:space-x-4">
-<a class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg" href="#"><span class="sr-only">Twitter</span><span class="material-symbols-outlined text-xl sm:text-2xl">alternate_email</span></a>
-<a class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg" href="#"><span class="sr-only">GitHub</span><span class="material-symbols-outlined text-xl sm:text-2xl">code</span></a>
-<a class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg" href="#"><span class="sr-only">LinkedIn</span><span class="material-symbols-outlined text-xl sm:text-2xl">group</span></a>
-</div>
-</div>
-</div>
-<div class="mt-6 sm:mt-8 pt-6 sm:pt-8 border-t border-solid border-gray-200 dark:border-b-[#233c48] text-center text-xs sm:text-sm text-gray-500 dark:text-gray-400">
-© <span id="currentYear"></span> Kachehub. All rights reserved.
-</div>
-</div>
+<!-- Footer -->
+<footer class="bg-[#0e0e0e] border-t border-[#494847]/15">
+<div class="flex flex-col md:flex-row justify-between items-center px-4 sm:px-6 lg:px-8 py-12 max-w-7xl mx-auto gap-6 text-center md:text-left">
+<div class="text-lg font-black text-white font-['Space_Grotesk']">KACHEHUB</div>
+<div class="flex gap-8 font-['Space_Grotesk'] uppercase tracking-[0.1em] text-xs">
+<a class="text-[#adaaaa] hover:text-[#00FF88] transition-colors" href="mailto:hello@kachehub.com">Email</a>
+<a class="text-[#adaaaa] hover:text-[#00FF88] transition-colors" href="https://wa.me/255689178891?text=Hello%20Kachehub%2C%20I%20would%20like%20to%20connect." rel="noopener noreferrer" target="_blank">WhatsApp</a>
+<a class="text-[#adaaaa] hover:text-[#00FF88] transition-colors" href="#contact">Contact</a>
+</div>
+<p class="text-[#adaaaa] font-['Space_Grotesk'] uppercase tracking-[0.1em] text-[10px]">© 2024 EMERALD OBSIDIAN. ALL RIGHTS RESERVED.</p>
 </div>
 </footer>
-
-<!-- Floating Contact Buttons -->
-<div class="fixed bottom-6 right-6 z-50 flex flex-col gap-4">
-<!-- Email Button -->
-<a href="mailto:kachehubinfo@gmail.com?subject=Inquiry%20from%20Website&body=Hello%20Kachehub%20Team,%0A%0AI%20am%20interested%20in%20your%20services%20and%20would%20like%20to%20discuss%20my%20project%20requirements.%0A%0APlease%20contact%20me%20at%20your%20earliest%20convenience.%0A%0AThank%20you,%0A[Your%20Name]" 
-   data-track="floating_email_cta"
-   class="bg-blue-500 hover:bg-blue-600 text-white rounded-full p-4 shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-110 flex items-center justify-center group"
-   aria-label="Send Email">
-<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-</svg>
-<span class="absolute right-full mr-3 bg-gray-900 text-white px-3 py-2 rounded-lg text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-Send us an email
-</span>
+<!-- Floating WhatsApp Button -->
+<a aria-label="Chat with Kachehub on WhatsApp" class="fixed bottom-8 right-8 w-16 h-16 bg-[#00FF88] rounded-sm flex items-center justify-center shadow-[0_10px_30px_rgba(0,255,136,0.3)] z-50 hover:scale-110 transition-transform" href="https://wa.me/255689178891?text=Hello%20Kachehub%2C%20I%20would%20like%20to%20discuss%20a%20project." rel="noopener noreferrer" target="_blank">
+<img alt="WhatsApp" class="w-8 h-8 filter contrast-200 brightness-50" data-alt="Official WhatsApp brand logo white variant for communication link" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxSXbF04B2l2iW74gjO5m2tEe6tD1w-VpgWvUGQ588YGYlJ0eEkI3KrSodBVdNPrS3-PPPRp9zSHDWx88yeTKCQdY_IJKSMKze5bBJkmNwrZd3437Eewo6eU8eERpZ2szSQPd4-lALxIUnzaJR4ZtktFSKDjASqBYoiFz0wRYfdnzlIgVeA-3taMehHxKlXB46dM4NxXmrlIaDrAFm2Da-0We1Kh5bP3zwgsNxV_aDaHl-7Xgymrolpb5_Jq1rolg8hMeJoJl_RBT4"/>
 </a>
-
-<!-- WhatsApp Button -->
-<a href="https://wa.me/255689178891?text=Hello%20Kachehub,%20I%20would%20like%20to%20inquire%20about%20your%20services" 
-   data-track="floating_whatsapp_cta"
-   target="_blank" 
-   rel="noopener noreferrer"
-   class="bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-110 flex items-center justify-center group"
-   aria-label="Chat on WhatsApp">
-<svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-</svg>
-<span class="absolute right-full mr-3 bg-gray-900 text-white px-3 py-2 rounded-lg text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-Chat with us on WhatsApp
-</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-
 <script>
-// Enhanced Navbar Background on Scroll
-document.addEventListener('DOMContentLoaded', function() {
-    const header = document.querySelector('header');
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenuClose = document.getElementById('mobile-menu-close');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
-    const METRICS_KEY = 'kachehub_metrics';
-    
-    // Navbar scroll effect with background change
-    let lastScroll = 0;
-    let ticking = false;
+      document.addEventListener('DOMContentLoaded', function () {
+        const form = document.getElementById('contactForm');
+        const serviceField = document.getElementById('service');
+        const footerNotice = document.querySelector('footer p');
+        const mobileMenuButton = document.getElementById('mobileMenuButton');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const whatsappNumber = '255689178891';
+        const currentYear = new Date().getFullYear();
 
-    // Lightweight conversion tracking helper
-    function trackEvent(eventName, payload = {}) {
-        const event = { event: eventName, payload, ts: new Date().toISOString() };
-        try {
-            const previous = JSON.parse(localStorage.getItem(METRICS_KEY) || '[]');
-            previous.push(event);
-            localStorage.setItem(METRICS_KEY, JSON.stringify(previous.slice(-300)));
-        } catch (error) {
-            console.warn('Metrics storage skipped:', error);
+        if (footerNotice) {
+          footerNotice.innerHTML = '&copy; ' + currentYear + ' KACHEHUB. ALL RIGHTS RESERVED.';
         }
 
-        if (typeof window.gtag === 'function') {
-            window.gtag('event', eventName, payload);
-        }
-        if (window.plausible) {
-            window.plausible(eventName, { props: payload });
-        }
-        console.log('track', eventName, payload);
-    }
-    
-    function updateNavbar() {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        const isDark = document.documentElement.classList.contains('dark');
-        const isMobile = window.innerWidth < 768; // Mobile/tablet breakpoint
-        
-        if (scrollTop > 50 || isMobile) {
-            // Scrolled down OR on mobile - solid background with shadow
-            header.classList.add('shadow-xl');
-            header.classList.remove('border-b', 'border-gray-200', 'dark:border-b-[#233c48]');
-            
-            if (isDark) {
-                header.style.backgroundColor = 'rgba(16, 28, 34, 1)'; // Solid dark background
-            } else {
-                header.style.backgroundColor = 'rgba(246, 247, 248, 1)'; // Solid light background
-            }
-            header.style.backdropFilter = 'blur(20px)';
-            
-        } else {
-            // At top on desktop - transparent/translucent background
-            header.classList.remove('shadow-xl');
-            header.classList.add('border-b', 'border-gray-200', 'dark:border-b-[#233c48]');
-            
-            if (isDark) {
-                header.style.backgroundColor = 'rgba(16, 28, 34, 0.95)'; // Translucent dark
-            } else {
-                header.style.backgroundColor = 'rgba(246, 247, 248, 0.95)'; // Translucent light
-            }
-            header.style.backdropFilter = 'blur(12px)';
-        }
-        
-        // Hide/show navbar on scroll (optional)
-        if (scrollTop > lastScroll && scrollTop > 200) {
-            // Scrolling down - you can optionally hide navbar
-            // header.style.transform = 'translateY(-100%)';
-        } else {
-            // Scrolling up
-            header.style.transform = 'translateY(0)';
-        }
-        
-        lastScroll = scrollTop;
-        ticking = false;
-    }
-    
-    // Throttled scroll listener for better performance
-    window.addEventListener('scroll', function() {
-        if (!ticking) {
-            window.requestAnimationFrame(updateNavbar);
-            ticking = true;
-        }
-    });
-    
-    // Initial call
-    updateNavbar();
+        if (mobileMenuButton && mobileMenu) {
+          mobileMenuButton.addEventListener('click', function () {
+            const isHidden = mobileMenu.classList.contains('hidden');
+            mobileMenu.classList.toggle('hidden');
+            mobileMenuButton.setAttribute('aria-expanded', String(isHidden));
+          });
 
-    // Home hero auto-moving background images
-    const heroBg = document.getElementById('hero-bg');
-    if (heroBg) {
-        const heroImages = [
-            'uploads/code-hero-1.svg',
-            'uploads/code-hero-2.svg',
-            'uploads/code-hero-3.svg',
-            'uploads/code-hero-4.svg'
-        ];
-        let heroIndex = 0;
-        const heroHasReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-        const setHeroImage = function(index) {
-            heroBg.style.backgroundImage = `url("${heroImages[index]}")`;
-        };
-
-        setHeroImage(heroIndex);
-
-        if (!heroHasReducedMotion && heroImages.length > 1) {
-            setInterval(function() {
-                heroBg.style.opacity = '0';
-                setTimeout(function() {
-                    heroIndex = (heroIndex + 1) % heroImages.length;
-                    setHeroImage(heroIndex);
-                    heroBg.style.opacity = '1';
-                }, 350);
-            }, 5500);
-        }
-    }
-    
-    // Mobile menu functions
-    function openMobileMenu() {
-        if (mobileMenu && mobileMenuOverlay) {
-            mobileMenu.classList.add('active');
-            mobileMenuOverlay.classList.remove('hidden');
-            document.body.style.overflow = 'hidden';
-        }
-    }
-    
-    function closeMobileMenu() {
-        if (mobileMenu && mobileMenuOverlay) {
-            mobileMenu.classList.remove('active');
-            mobileMenuOverlay.classList.add('hidden');
-            document.body.style.overflow = '';
-        }
-    }
-    
-    // Mobile menu event listeners
-    if (mobileMenuButton) {
-        mobileMenuButton.addEventListener('click', openMobileMenu);
-    }
-    
-    if (mobileMenuClose) {
-        mobileMenuClose.addEventListener('click', closeMobileMenu);
-    }
-    
-    if (mobileMenuOverlay) {
-        mobileMenuOverlay.addEventListener('click', closeMobileMenu);
-    }
-    
-    // Close mobile menu on link click
-    if (mobileMenu) {
-        const mobileNavLinks = mobileMenu.querySelectorAll('a[href^="#"]');
-        mobileNavLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                setTimeout(closeMobileMenu, 100);
+          mobileMenu.querySelectorAll('a').forEach(function (link) {
+            link.addEventListener('click', function () {
+              mobileMenu.classList.add('hidden');
+              mobileMenuButton.setAttribute('aria-expanded', 'false');
             });
-        });
-    }
-    
-    // Close menu on window resize (desktop size)
-    window.addEventListener('resize', function() {
-        if (window.innerWidth >= 1024) {
-            closeMobileMenu();
+          });
         }
-    });
-    
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href');
-            const target = document.querySelector(targetId);
-            
-            if (target) {
-                const headerHeight = header ? header.offsetHeight : 0;
-                const targetPosition = target.offsetTop - headerHeight - 20;
-                
-                window.scrollTo({
-                    top: Math.max(0, targetPosition),
-                    behavior: 'smooth'
-                });
+
+        document.querySelectorAll('[data-service-link]').forEach(function (link) {
+          link.addEventListener('click', function () {
+            if (serviceField) {
+              serviceField.value = link.getAttribute('data-service-link');
             }
+          });
         });
-    });
-    
-    // Close mobile menu with Escape key
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('active')) {
-            closeMobileMenu();
+
+        if (!form) {
+          return;
         }
-    });
 
-    // Track button/link conversion interactions
-    document.querySelectorAll('[data-track]').forEach((item) => {
-        item.addEventListener('click', () => {
-            trackEvent('cta_click', { id: item.getAttribute('data-track') });
+        form.addEventListener('submit', function (event) {
+          event.preventDefault();
+
+          const name = document.getElementById('name').value.trim();
+          const email = document.getElementById('email').value.trim();
+          const service = serviceField.value.trim();
+          const message = document.getElementById('message').value.trim();
+
+          if (!name || !email || !message) {
+            window.alert('Please complete your name, email, and message before sending.');
+            return;
+          }
+
+          let text = '*New Kachehub Project Inquiry*\\n\\n';
+          text += '*Name:* ' + name + '\\n';
+          text += '*Email:* ' + email + '\\n';
+          text += '*Service:* ' + service + '\\n\\n';
+          text += '*Project Details:*\\n' + message;
+
+          const url = 'https://wa.me/' + whatsappNumber + '?text=' + encodeURIComponent(text);
+          const popup = window.open(url, '_blank', 'noopener');
+
+          if (!popup || popup.closed || typeof popup.closed === 'undefined') {
+            window.location.href = url;
+            return;
+          }
+
+          form.reset();
         });
-    });
-
-    // Project Brief Form - Primary lead capture
-    const briefForm = document.getElementById('briefForm');
-    if (briefForm) {
-        briefForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-
-            const fullName = document.getElementById('briefName').value.trim();
-            const business = document.getElementById('briefBusiness').value.trim();
-            const email = document.getElementById('briefEmail').value.trim();
-            const budget = document.getElementById('briefBudget').value;
-            const timeline = document.getElementById('briefTimeline').value;
-            const goal = document.getElementById('briefGoal').value.trim();
-
-            if (!fullName || !business || !email || !budget || !timeline || !goal) {
-                alert('Please complete all required project brief fields.');
-                trackEvent('brief_validation_failed', { reason: 'missing_required_fields' });
-                return;
-            }
-
-            trackEvent('brief_submit_started', { budget, timeline });
-
-            let text = `*New Project Brief Request*\n\n`;
-            text += `*Name:* ${fullName}\n`;
-            text += `*Business:* ${business}\n`;
-            text += `*Email:* ${email}\n`;
-            text += `*Budget:* ${budget}\n`;
-            text += `*Timeline:* ${timeline}\n\n`;
-            text += `*Project Goal:*\n${goal}`;
-
-            const whatsappURL = `https://wa.me/255689178891?text=${encodeURIComponent(text)}`;
-            const newWindow = window.open(whatsappURL, '_blank');
-
-            if (!newWindow || newWindow.closed || typeof newWindow.closed === 'undefined') {
-                window.location.href = whatsappURL;
-            } else {
-                setTimeout(() => {
-                    briefForm.reset();
-                }, 600);
-            }
-            trackEvent('brief_submit_success', { channel: 'whatsapp' });
-        });
-    }
-    
-    // Contact Form - Send to WhatsApp
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form values
-            const name = document.getElementById('name').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const phone = document.getElementById('phone').value.trim();
-            const subject = document.getElementById('subject').value.trim();
-            const message = document.getElementById('message').value.trim();
-            
-            // Validate required fields
-            if (!name || !email || !subject || !message) {
-                alert('Please fill in all required fields.');
-                trackEvent('contact_validation_failed', { reason: 'missing_required_fields' });
-                return;
-            }
-            trackEvent('contact_submit_started', { subject });
-            
-            // Format the WhatsApp message - simpler approach
-            let text = `*New Contact Form Submission*\n\n`;
-            text += `*Name:* ${name}\n`;
-            text += `*Email:* ${email}\n`;
-            if (phone) {
-                text += `*Phone:* ${phone}\n`;
-            }
-            text += `*Subject:* ${subject}\n\n`;
-            text += `*Message:*\n${message}`;
-            
-            // WhatsApp number (without + or spaces)
-            const whatsappNumber = '255689178891';
-            
-            // Encode the entire message properly
-            const encodedText = encodeURIComponent(text);
-            
-            // Create WhatsApp URL
-            const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedText}`;
-            
-            // Debug log
-            console.log('Opening WhatsApp URL:', whatsappURL);
-            
-            // Open WhatsApp
-            const newWindow = window.open(whatsappURL, '_blank');
-            
-            // Check if popup was blocked
-            if (!newWindow || newWindow.closed || typeof newWindow.closed === 'undefined') {
-                // Popup blocked, try direct redirect
-                window.location.href = whatsappURL;
-            } else {
-                // Success - reset form
-                setTimeout(() => {
-                    contactForm.reset();
-                }, 1000);
-            }
-            trackEvent('contact_submit_success', { channel: 'whatsapp' });
-        });
-    }
-    
-    // Newsletter Form - Still sends to backend/database
-    const newsletterForm = document.getElementById('newsletterForm');
-    if (newsletterForm) {
-        newsletterForm.addEventListener('submit', async function(e) {
-            e.preventDefault();
-            
-            const emailInput = this.querySelector('input[name="email"]');
-            const email = emailInput.value.trim();
-            const submitButton = this.querySelector('button[type="submit"]');
-            const originalButtonText = submitButton.innerHTML;
-            
-            if (!email) {
-                alert('Please enter your email address.');
-                trackEvent('newsletter_validation_failed', { reason: 'missing_email' });
-                return;
-            }
-            
-            // Disable button and show loading state
-            submitButton.disabled = true;
-            submitButton.innerHTML = '<span class="truncate">Subscribing...</span>';
-            
-            try {
-                trackEvent('newsletter_submit_started');
-                // For static hosting, you can integrate with a service like Formspree, Netlify Forms, or just show a message
-                // Example: Send to WhatsApp or Email
-                const whatsappNumber = '255689178891';
-                const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent('Newsletter Subscription: ' + email)}`;
-                
-                // Show success message
-                alert('Thank you for subscribing to our newsletter!');
-                newsletterForm.reset();
-                trackEvent('newsletter_submit_success', { channel: 'local_message' });
-                
-                // Optionally open WhatsApp (commented out by default)
-                // window.open(whatsappURL, '_blank');
-            } catch (error) {
-                console.error('Newsletter subscription error:', error);
-                alert('Thank you for your interest! We will contact you soon.');
-                trackEvent('newsletter_submit_error');
-            } finally {
-                // Re-enable button
-                submitButton.disabled = false;
-                submitButton.innerHTML = originalButtonText;
-            }
-        });
-    }
-
-    // Reveal animations for sections and cards
-    const revealTargets = document.querySelectorAll(
-        '#home .relative.z-10, #brief .reveal-up, #services .text-center, #portfolio .text-center, #testimonials .text-center, #about .text-center, #team .text-center, #contact .text-center, #services-container > div, #portfolio-container > div, #team article, #testimonials-container > div'
-    );
-    revealTargets.forEach((el, index) => {
-        el.classList.add('reveal-up');
-        el.style.transitionDelay = `${Math.min(index * 45, 260)}ms`;
-    });
-
-    const revealObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('in-view');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.15 });
-
-    revealTargets.forEach((el) => revealObserver.observe(el));
-    
-    // Auto-update copyright year
-    const yearSpan = document.getElementById('currentYear');
-    if (yearSpan) {
-        yearSpan.textContent = new Date().getFullYear();
-    }
-});
-</script>
-
-</body>
-</html>
+      });
+    </script>
+</body></html>
